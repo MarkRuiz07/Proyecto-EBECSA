@@ -1,0 +1,8 @@
+F:\proyetos\aS\EBECSA\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\EBECSA\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Documents\EBECSA\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Documents\EBECSA\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Usuario\Documents\EBECSA\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Usuario\Documents\EBECSA\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\EBECSA\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Usuario\Documents\EBECSA\CapaDatos\obj\Debug\CapaDatos.pdb

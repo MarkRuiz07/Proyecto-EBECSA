@@ -1,0 +1,17 @@
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\CapaPresentacionWF.exe.config
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\CapaPresentacionWF.exe
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\CapaPresentacionWF.pdb
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\CapaEntidades.dll
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\Negocio.dll
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\CapaEntidades.pdb
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\Negocio.pdb
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.FVehiculo.resources
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.Properties.Resources.resources
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.exe
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.pdb
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.fProspecto.resources
+C:\Users\Usuario\Documents\EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.fCategoria.resources
