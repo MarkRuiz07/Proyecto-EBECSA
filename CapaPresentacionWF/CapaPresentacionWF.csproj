@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaPresentacionWF</RootNamespace>
     <AssemblyName>CapaPresentacionWF</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -64,6 +65,18 @@
     <Compile Include="fVehiculo.Designer.cs">
       <DependentUpon>fVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio1.1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio1.1.Designer.cs">
+      <DependentUpon>Inicio1.1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fCategoria.resx">
@@ -75,6 +88,12 @@
     <EmbeddedResource Include="fVehiculo.resx">
       <DependentUpon>fVehiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio1.1.resx">
+      <DependentUpon>Inicio1.1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,6 +126,24 @@
       <Project>{d76ae235-2c7a-4555-9501-7a4037ac7023}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo EBECSA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ebecsa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo Assa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo Iniser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo lafise seguros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo America seguros.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

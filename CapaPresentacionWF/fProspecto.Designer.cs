@@ -113,7 +113,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Aquamarine;
+            this.label5.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label5.Font = new System.Drawing.Font("Eras Bold ITC", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label5.Location = new System.Drawing.Point(232, 27);
@@ -199,7 +199,8 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGuardar.BackColor = System.Drawing.Color.SkyBlue;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.PeachPuff;
             this.btnGuardar.FlatAppearance.BorderSize = 3;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -229,7 +230,7 @@
             this.textBoxID.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxID.Location = new System.Drawing.Point(208, 90);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(28, 22);
+            this.textBoxID.Size = new System.Drawing.Size(81, 22);
             this.textBoxID.TabIndex = 4;
             // 
             // lblNombre

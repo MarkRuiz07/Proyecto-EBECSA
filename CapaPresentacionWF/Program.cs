@@ -16,7 +16,7 @@ namespace CapaPresentacionWF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fProspecto());
+            Application.Run(new Inicio());
         }
     }
 }

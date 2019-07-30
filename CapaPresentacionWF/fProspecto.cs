@@ -122,7 +122,7 @@ namespace CapaPresentacionWF
             textBoxApellido1.Text = dataGridViewProspecto.CurrentRow.Cells["apellidoPaterno"].Value.ToString();
             textBoxApellido2.Text = dataGridViewProspecto.CurrentRow.Cells["apellidoMaterno"].Value.ToString();
             textBoxCorreoE.Text = dataGridViewProspecto.CurrentRow.Cells["correoElectronico"].Value.ToString();
-            textBoxTelefono.Text = dataGridViewProspecto.CurrentRow.Cells["TelefonoP"].Value.ToString();
+            textBoxTelefono.Text = dataGridViewProspecto.CurrentRow.Cells["TelefonP"].Value.ToString();
 
             tabconProspecto.SelectedTab = tabPageProspecto;
             btnGuardar.Text = "Actualizar";

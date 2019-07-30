@@ -220,7 +220,7 @@ namespace CapaDatos
                 while (dr.Read()) //Recorrer cada registro
                 {
 
-                    Vehiculo v = new Vehiculo();
+                    Vehiculo V = new Vehiculo();
                     v.idVehiculo = Convert.ToInt32(dr["idVehiculo"].ToString());
                     v.marca = dr["marca"].ToString();
                     v.modelo = dr["modelo"].ToString();

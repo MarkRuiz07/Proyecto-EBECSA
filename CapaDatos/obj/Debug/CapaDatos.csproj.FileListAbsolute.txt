@@ -6,3 +6,17 @@ C:\Users\Usuario\Documents\EBECSA\CapaDatos\bin\Debug\CapaEntidades.pdb
 C:\Users\Usuario\Documents\EBECSA\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Documents\EBECSA\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Usuario\Documents\EBECSA\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.pdb
+G:\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+G:\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.dll
+G:\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaDatos.dll
+G:\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaDatos.pdb
+G:\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaEntidades.dll
+G:\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaEntidades.pdb
+G:\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.pdb

@@ -136,58 +136,58 @@
             // textBoxIDCateg
             // 
             this.textBoxIDCateg.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIDCateg.Location = new System.Drawing.Point(624, 203);
+            this.textBoxIDCateg.Location = new System.Drawing.Point(648, 199);
             this.textBoxIDCateg.Name = "textBoxIDCateg";
-            this.textBoxIDCateg.Size = new System.Drawing.Size(45, 22);
+            this.textBoxIDCateg.Size = new System.Drawing.Size(72, 22);
             this.textBoxIDCateg.TabIndex = 28;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(506, 202);
+            this.label3.Location = new System.Drawing.Point(522, 187);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 19);
+            this.label3.Size = new System.Drawing.Size(82, 38);
             this.label3.TabIndex = 27;
-            this.label3.Text = "ID Categoria";
+            this.label3.Text = "ID \r\nCategoria";
             // 
             // textBoxIDSeguros
             // 
             this.textBoxIDSeguros.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIDSeguros.Location = new System.Drawing.Point(624, 148);
+            this.textBoxIDSeguros.Location = new System.Drawing.Point(648, 148);
             this.textBoxIDSeguros.Name = "textBoxIDSeguros";
-            this.textBoxIDSeguros.Size = new System.Drawing.Size(45, 22);
+            this.textBoxIDSeguros.Size = new System.Drawing.Size(72, 22);
             this.textBoxIDSeguros.TabIndex = 26;
             // 
             // lblIDSeguros
             // 
             this.lblIDSeguros.AutoSize = true;
-            this.lblIDSeguros.Location = new System.Drawing.Point(519, 148);
+            this.lblIDSeguros.Location = new System.Drawing.Point(522, 132);
             this.lblIDSeguros.Name = "lblIDSeguros";
-            this.lblIDSeguros.Size = new System.Drawing.Size(90, 19);
+            this.lblIDSeguros.Size = new System.Drawing.Size(69, 38);
             this.lblIDSeguros.TabIndex = 25;
-            this.lblIDSeguros.Text = "ID Seguros";
+            this.lblIDSeguros.Text = "ID \r\nSeguros";
             // 
             // textBoxIDProspecto
             // 
             this.textBoxIDProspecto.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIDProspecto.Location = new System.Drawing.Point(624, 93);
+            this.textBoxIDProspecto.Location = new System.Drawing.Point(648, 94);
             this.textBoxIDProspecto.Name = "textBoxIDProspecto";
-            this.textBoxIDProspecto.Size = new System.Drawing.Size(45, 22);
+            this.textBoxIDProspecto.Size = new System.Drawing.Size(72, 22);
             this.textBoxIDProspecto.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(504, 93);
+            this.label2.Location = new System.Drawing.Point(520, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 19);
+            this.label2.Size = new System.Drawing.Size(84, 38);
             this.label2.TabIndex = 23;
-            this.label2.Text = "ID Prospecto";
+            this.label2.Text = "ID \r\nProspecto";
             // 
             // textBoxCirculacion
             // 
             this.textBoxCirculacion.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCirculacion.Location = new System.Drawing.Point(624, 304);
+            this.textBoxCirculacion.Location = new System.Drawing.Point(648, 305);
             this.textBoxCirculacion.Name = "textBoxCirculacion";
             this.textBoxCirculacion.Size = new System.Drawing.Size(236, 22);
             this.textBoxCirculacion.TabIndex = 22;
@@ -196,7 +196,7 @@
             // 
             this.labelCircu.AutoSize = true;
             this.labelCircu.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCircu.Location = new System.Drawing.Point(517, 305);
+            this.labelCircu.Location = new System.Drawing.Point(522, 308);
             this.labelCircu.Name = "labelCircu";
             this.labelCircu.Size = new System.Drawing.Size(92, 19);
             this.labelCircu.TabIndex = 21;
@@ -205,25 +205,25 @@
             // textBoxNumPas
             // 
             this.textBoxNumPas.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNumPas.Location = new System.Drawing.Point(624, 253);
+            this.textBoxNumPas.Location = new System.Drawing.Point(648, 252);
             this.textBoxNumPas.Name = "textBoxNumPas";
-            this.textBoxNumPas.Size = new System.Drawing.Size(45, 22);
+            this.textBoxNumPas.Size = new System.Drawing.Size(72, 22);
             this.textBoxNumPas.TabIndex = 20;
             // 
             // labelNumero
             // 
             this.labelNumero.AutoSize = true;
             this.labelNumero.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumero.Location = new System.Drawing.Point(441, 253);
+            this.labelNumero.Location = new System.Drawing.Point(520, 252);
             this.labelNumero.Name = "labelNumero";
-            this.labelNumero.Size = new System.Drawing.Size(168, 19);
+            this.labelNumero.Size = new System.Drawing.Size(98, 38);
             this.labelNumero.TabIndex = 19;
-            this.labelNumero.Text = "Numero de Pasajeros";
+            this.labelNumero.Text = "Numero de \r\n Pasajeros";
             // 
             // textBoxVersionCar
             // 
             this.textBoxVersionCar.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxVersionCar.Location = new System.Drawing.Point(624, 368);
+            this.textBoxVersionCar.Location = new System.Drawing.Point(648, 368);
             this.textBoxVersionCar.Multiline = true;
             this.textBoxVersionCar.Name = "textBoxVersionCar";
             this.textBoxVersionCar.Size = new System.Drawing.Size(260, 76);
@@ -233,18 +233,18 @@
             // 
             this.labelVersion.AutoSize = true;
             this.labelVersion.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVersion.Location = new System.Drawing.Point(428, 368);
+            this.labelVersion.Location = new System.Drawing.Point(520, 368);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(181, 19);
+            this.labelVersion.Size = new System.Drawing.Size(117, 38);
             this.labelVersion.TabIndex = 17;
-            this.labelVersion.Text = "Version/Caracteristicas";
+            this.labelVersion.Text = "Version/\r\nCaracteristicas";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(244, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -261,11 +261,11 @@
             // 
             this.labelAñoFab.AutoSize = true;
             this.labelAñoFab.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAñoFab.Location = new System.Drawing.Point(24, 368);
+            this.labelAñoFab.Location = new System.Drawing.Point(59, 353);
             this.labelAñoFab.Name = "labelAñoFab";
-            this.labelAñoFab.Size = new System.Drawing.Size(132, 19);
+            this.labelAñoFab.Size = new System.Drawing.Size(96, 38);
             this.labelAñoFab.TabIndex = 14;
-            this.labelAñoFab.Text = "Año Fabricacion";
+            this.labelAñoFab.Text = "Año \r\nFabricacion";
             // 
             // textBoxColorSecun
             // 
@@ -279,11 +279,11 @@
             // 
             this.lblColorSec.AutoSize = true;
             this.lblColorSec.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColorSec.Location = new System.Drawing.Point(24, 304);
+            this.lblColorSec.Location = new System.Drawing.Point(59, 289);
             this.lblColorSec.Name = "lblColorSec";
-            this.lblColorSec.Size = new System.Drawing.Size(137, 19);
+            this.lblColorSec.Size = new System.Drawing.Size(97, 38);
             this.lblColorSec.TabIndex = 12;
-            this.lblColorSec.Text = "Color Secundario";
+            this.lblColorSec.Text = "Color\r\n Secundario";
             // 
             // textBoxColor
             // 
@@ -361,7 +361,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Eras Bold ITC", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(339, 19);
+            this.label1.Location = new System.Drawing.Point(350, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 31);
             this.label1.TabIndex = 3;

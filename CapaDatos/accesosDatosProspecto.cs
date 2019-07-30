@@ -142,12 +142,12 @@ namespace CapaDatos
                 cm = new SqlCommand("Pr_Prospecto", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@idProspecto", ""); //del procedimiento
-                cm.Parameters.AddWithValue("@cedula", pr);
-                cm.Parameters.AddWithValue("@nombres",pr);
-                cm.Parameters.AddWithValue("@apellidoPaterno", pr);
-                cm.Parameters.AddWithValue("@apellidoMaterno", pr);
-                cm.Parameters.AddWithValue("@correoElectronico", pr);
-                cm.Parameters.AddWithValue("@TelefonP", pr);
+                cm.Parameters.AddWithValue("@cedula", pr.cedula);
+                cm.Parameters.AddWithValue("@nombres",pr.nombres);
+                cm.Parameters.AddWithValue("@apellidoPaterno", pr.apellidoPaterno);
+                cm.Parameters.AddWithValue("@apellidoMaterno", pr.apellidoMaterno);
+                cm.Parameters.AddWithValue("@correoElectronico", pr.correoElectronico);
+                cm.Parameters.AddWithValue("@TelefonP", pr.TelefonP);
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
                 cm.ExecuteNonQuery();
