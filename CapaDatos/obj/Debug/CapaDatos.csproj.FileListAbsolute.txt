@@ -20,3 +20,10 @@ G:\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaDatos.pdb
 G:\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaEntidades.dll
 G:\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaEntidades.pdb
 G:\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaEntidades.dll
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Debug\CapaEntidades.pdb
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Debug\CapaDatos.pdb

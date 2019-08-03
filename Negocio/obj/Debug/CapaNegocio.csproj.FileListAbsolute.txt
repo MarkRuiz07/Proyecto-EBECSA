@@ -25,3 +25,12 @@ G:\Proyecto-EBECSA\Negocio\bin\Debug\CapaEntidades.pdb
 G:\Proyecto-EBECSA\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 G:\Proyecto-EBECSA\Negocio\obj\Debug\Negocio.dll
 G:\Proyecto-EBECSA\Negocio\obj\Debug\Negocio.pdb
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Debug\Negocio.dll
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Debug\Negocio.pdb
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Debug\CapaDatos.dll
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Debug\CapaEntidades.dll
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Debug\CapaEntidades.pdb
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\obj\Debug\Negocio.dll
+C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\Negocio\obj\Debug\Negocio.pdb

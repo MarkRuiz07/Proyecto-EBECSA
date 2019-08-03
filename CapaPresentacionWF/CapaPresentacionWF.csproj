@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cotizacion.Designer.cs">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="fCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,14 +77,17 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inicio1.1.cs">
+    <Compile Include="Inicio1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio1.1.Designer.cs">
-      <DependentUpon>Inicio1.1.cs</DependentUpon>
+    <Compile Include="Inicio1.Designer.cs">
+      <DependentUpon>Inicio1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cotizacion.resx">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fCategoria.resx">
       <DependentUpon>fCategoria.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,8 +100,8 @@
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio1.1.resx">
-      <DependentUpon>Inicio1.1.cs</DependentUpon>
+    <EmbeddedResource Include="Inicio1.resx">
+      <DependentUpon>Inicio1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
