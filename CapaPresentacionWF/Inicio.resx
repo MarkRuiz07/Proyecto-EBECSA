@@ -117,4 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="picBoxInicio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
+        TUUH4wgIBSo3eN0LbgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAARbSURBVFhH
+        nZdbbFRFGMdHTbq757Y302AQrfHBGOoFA5HERy8v+qRNxfDkLeoTl6CNJoLsbrstVJbaWqo9p2oDohaw
+        Blp6gS0PaqkhXmIiaaOYCiYaklaxspZ29/P7hl2cOTtnL07ySzazO9//tzNz5pzDvNpbLGLZRihum5Fp
+        x4xm7GAk6wSjUI5OMww7AibEA2auVbP+2KMHD9qMRfJlyzdg7HrHCO+zrciSKqAcJPB6wJCIaUbuTc0a
+        +4SxG/Ix6tZvGLWOGf5VVbhSVAIFkpp5OeUP1eXj5MbDrciCqmg1lBIgEpqZLZLg026Ff1EVrJZyAkSL
+        Zmak5bCNcI+qWDner70JPlhxs9RXiQCxRwuO8nC+2//nhjsTb4YzsYTUV6kAbUx+ddhGMCEWqIbTbbtg
+        qm231FepAIGX6AHm0HUuFKiGSRQgxL5qBNo0ax4FohmxgIqvk23w5bZXivq9BI5t3grpRLMyVAQPqyxz
+        rGhOLOBm8uUmoDbVnCz+zkPgZDzBxxzdtEUZXOANBGcgLBUQOXjHali6nIGZ0VHYbUWKvvcS2GEEYWZs
+        DBYX/oa2utuV4cR2hDl+A7wkvu/ugeXFRehcfRf0WsXfewlQ8RSOWb5yBT5P7S0KFmGOTwelROhGuHT+
+        Avww+Bl0K/49UUqAOHtsCObO/SwFurkqoJD4uP5evo7HN22WAkTKCQxt3cZrlFqG/wRcEoMPPcIHf/p4
+        gxQgcuSJRjjS8KTUJwocaGjkNbrXPyCFisgCgsThBx/mg4+6AkQ6zBB0GPLSiQIfNm7gNbrWrZdCRYoF
+        8hL9d9bzwadwGsWAcogCw3h2UGtdVSeFiqgFkHdQYn52Fn4aGlYGeSEKTI+MwMXpGSnQjaeAjXyxtwOy
+        S0swcN86ZZiKgkDHPWv42FOtu4pCRUgg5w4v0HXrbbD41wJcSE9AX6RWGeiGBOgg+vFkGv758xIkV96i
+        DCauHkQ+/aI7uEAPMvjiS3wdz9p9FUl04fnxVa/Nxxx+/gVlcAF6eCWB79zBIu1+HSZaWnlBmolDa+9X
+        BhMDa9bC7PgJ/tsJvHeoQkVidDOyfUavKlgkiRKHnnkOMvPzfF3Pj47D6abXYHzDRs5k06swe3wEsnj0
+        ZubmYODpZ5WBbvB2PMf6fNpjqlAR2pDteFW0rFgJ6Z0x+O2bbwFyOf5PecPP1JfeGYdm/I0qTEVKN/sZ
+        PhzWYMg5d6iKfTgTSRShzROL1kKq/m4Ofd6umZDULUjh4aQKc3PtkYyaU6NvVAV6QTPSjSKduNtp19PN
+        Ct+c+D4Qz4FSpDRrmIdTw8fy62y//pEqrCQo4b6LViJALyhFb0n9jOmOX59SBpUCl0WUKCeALybLbwcC
+        q/KxcnuPMT8ux35lUCmEmSglQP/cM7zQaDn6avSnsHBFG/Ma+ZlQCdCGa9eCI2VfTsVGV4ft0x51fMa7
+        GECH1e9SoAqU6DRC/ITDQyZHj90p3drv/XrO2L+8nbzw3w0sEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAMQOAADEDgAAAAAAAAAA
+        AAAaFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoU
+        zP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/3Nx4P91c+D/GhTM/xoUzP8aFMz/GhTM/xoU
+        zP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/HRjN//7+//////////////r6/v81MNL/GhTM/xoU
+        zP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/HhnN/////////////////////////////Pz+/0M/
+        1f8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/vr3w////////////////////////////////////
+        ////////7u77/yEbzf8aFMz/GhTM/xoUzP8eGM3/+Pj9//////////////////////95duH/PDfU//v7
+        /v/////////////////+/v//UU3Y/xoUzP8aFMz/7+/8//////////////////////+trO3/GhTM/xoU
+        zP86NdP/+/v+//////////////////////8aFMz/IhzO//////////////////7+//9MR9f/GhTM/xoU
+        zP8jHs7/HBbM/xsWzP/NzfT/////////////////GxbM/yIdzv///////////4B+4/8cFsz/GhTM/xoU
+        zP8aFMz/bmzf//X2/f8pJND/GhTM/zMv0v/6+v7//////xsWzP8eGc3/5OT5/xwWzP8aFMz/GhTM/zk1
+        0/8dF83/GhTM/zs30////////v7//1dT2f8aFMz/GhTM/8jH8/8aFMz/GxXM/xwWzP8aFMz/GhTM/xoU
+        zP+npez/zc30/xsVzP8aFMz/o6Lq///////+/v//VE/Y/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoU
+        zP8aFMz/fHri///////z8vz/TUjX/xoUzP9OStj//v7//9ra9/8aFMz/GhTM/xoUzP8aFMz/GhTM/xoU
+        zP8aFMz/GhTM/xoUzP+KiOX///////////9JRdf/GhTM/yciz/9DP9X/GhTM/xoUzP8aFMz/GhTM/xoU
+        zP8aFMz/GhTM/xoUzP8aFMz/GhTM/5qY6P//////iYfl/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoU
+        zP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/JB7O/0pG1/8aFMz/GhTM/xoUzP8aFMz/GhTM/xoU
+        zP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoUzP8aFMz/GhTM/xoU
+        zP8aFMz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAA==
+</value>
+  </data>
 </root>

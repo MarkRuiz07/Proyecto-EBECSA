@@ -79,11 +79,13 @@
             this.tabControlVehiculo.Location = new System.Drawing.Point(3, 0);
             this.tabControlVehiculo.Name = "tabControlVehiculo";
             this.tabControlVehiculo.SelectedIndex = 0;
-            this.tabControlVehiculo.Size = new System.Drawing.Size(939, 536);
+            this.tabControlVehiculo.Size = new System.Drawing.Size(935, 536);
             this.tabControlVehiculo.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPage1.Controls.Add(this.buttonGuardar);
             this.tabPage1.Controls.Add(this.textBoxIDCateg);
             this.tabPage1.Controls.Add(this.label3);
@@ -114,22 +116,21 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(931, 504);
+            this.tabPage1.Size = new System.Drawing.Size(927, 504);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Datos";
-            this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // buttonGuardar
             // 
-            this.buttonGuardar.BackColor = System.Drawing.Color.LightBlue;
+            this.buttonGuardar.BackColor = System.Drawing.Color.DarkOrange;
             this.buttonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGuardar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonGuardar.Location = new System.Drawing.Point(403, 464);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(106, 34);
             this.buttonGuardar.TabIndex = 29;
-            this.buttonGuardar.Text = "Guardar";
+            this.buttonGuardar.Text = "Registrar";
             this.buttonGuardar.UseVisualStyleBackColor = false;
             this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
@@ -242,7 +243,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(244, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(244, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -361,6 +362,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Eras Bold ITC", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(350, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 31);
@@ -369,6 +371,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPage2.Controls.Add(this.dataGridViewVehiculo);
             this.tabPage2.Controls.Add(this.buttonEliminar);
             this.tabPage2.Controls.Add(this.buttonEditar);
@@ -377,14 +381,13 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(931, 504);
+            this.tabPage2.Size = new System.Drawing.Size(927, 504);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalles";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridViewVehiculo
             // 
-            this.dataGridViewVehiculo.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewVehiculo.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewVehiculo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVehiculo.Location = new System.Drawing.Point(25, 103);
             this.dataGridViewVehiculo.Name = "dataGridViewVehiculo";
@@ -394,8 +397,9 @@
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEliminar.BackColor = System.Drawing.Color.DarkRed;
+            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonEliminar.ForeColor = System.Drawing.Color.White;
             this.buttonEliminar.Location = new System.Drawing.Point(514, 21);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(91, 28);
@@ -406,7 +410,7 @@
             // 
             // buttonEditar
             // 
-            this.buttonEditar.BackColor = System.Drawing.Color.PeachPuff;
+            this.buttonEditar.BackColor = System.Drawing.Color.Gold;
             this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEditar.Location = new System.Drawing.Point(402, 21);
             this.buttonEditar.Name = "buttonEditar";
@@ -439,10 +443,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(943, 548);
             this.Controls.Add(this.tabControlVehiculo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FVehiculo";
-            this.Text = "Vehiculo";
+            this.Text = "Seguros EBECSA";
             this.Load += new System.EventHandler(this.FVehiculo_Load);
             this.tabControlVehiculo.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

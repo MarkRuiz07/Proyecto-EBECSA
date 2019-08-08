@@ -69,12 +69,13 @@
             this.tabconProspecto.Location = new System.Drawing.Point(18, -2);
             this.tabconProspecto.Name = "tabconProspecto";
             this.tabconProspecto.SelectedIndex = 0;
-            this.tabconProspecto.Size = new System.Drawing.Size(724, 487);
+            this.tabconProspecto.Size = new System.Drawing.Size(750, 487);
             this.tabconProspecto.TabIndex = 12;
             // 
             // tabPageProspecto
             // 
             this.tabPageProspecto.BackColor = System.Drawing.Color.MintCream;
+            this.tabPageProspecto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPageProspecto.Controls.Add(this.pictureBox1);
             this.tabPageProspecto.Controls.Add(this.label5);
             this.tabPageProspecto.Controls.Add(this.textBoxCorreoE);
@@ -95,7 +96,7 @@
             this.tabPageProspecto.Location = new System.Drawing.Point(4, 28);
             this.tabPageProspecto.Name = "tabPageProspecto";
             this.tabPageProspecto.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProspecto.Size = new System.Drawing.Size(716, 455);
+            this.tabPageProspecto.Size = new System.Drawing.Size(742, 455);
             this.tabPageProspecto.TabIndex = 0;
             this.tabPageProspecto.Text = "Nuevo";
             this.tabPageProspecto.Click += new System.EventHandler(this.tabPageProspecto_Click);
@@ -210,7 +211,7 @@
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(99, 40);
             this.btnGuardar.TabIndex = 9;
-            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Text = "Registrar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
@@ -271,6 +272,8 @@
             // 
             // tabPageDetalleProspecto
             // 
+            this.tabPageDetalleProspecto.BackColor = System.Drawing.Color.Khaki;
+            this.tabPageDetalleProspecto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPageDetalleProspecto.Controls.Add(this.dataGridViewProspecto);
             this.tabPageDetalleProspecto.Controls.Add(this.btnEliminar);
             this.tabPageDetalleProspecto.Controls.Add(this.btnEditar);
@@ -279,18 +282,17 @@
             this.tabPageDetalleProspecto.Location = new System.Drawing.Point(4, 28);
             this.tabPageDetalleProspecto.Name = "tabPageDetalleProspecto";
             this.tabPageDetalleProspecto.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDetalleProspecto.Size = new System.Drawing.Size(716, 455);
+            this.tabPageDetalleProspecto.Size = new System.Drawing.Size(742, 455);
             this.tabPageDetalleProspecto.TabIndex = 1;
             this.tabPageDetalleProspecto.Text = "Detalles";
-            this.tabPageDetalleProspecto.UseVisualStyleBackColor = true;
             // 
             // dataGridViewProspecto
             // 
-            this.dataGridViewProspecto.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewProspecto.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewProspecto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProspecto.Location = new System.Drawing.Point(3, 85);
+            this.dataGridViewProspecto.Location = new System.Drawing.Point(19, 87);
             this.dataGridViewProspecto.Name = "dataGridViewProspecto";
-            this.dataGridViewProspecto.Size = new System.Drawing.Size(703, 343);
+            this.dataGridViewProspecto.Size = new System.Drawing.Size(693, 343);
             this.dataGridViewProspecto.TabIndex = 4;
             this.dataGridViewProspecto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProspecto_CellContentClick);
             // 
@@ -344,10 +346,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 482);
+            this.ClientSize = new System.Drawing.Size(783, 482);
             this.Controls.Add(this.tabconProspecto);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fProspecto";
-            this.Text = "fProspecto";
+            this.Text = "Seguros EBECSA";
             this.Load += new System.EventHandler(this.fProspecto_Load);
             this.tabconProspecto.ResumeLayout(false);
             this.tabPageProspecto.ResumeLayout(false);

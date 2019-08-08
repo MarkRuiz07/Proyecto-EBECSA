@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.lblElegir = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
@@ -49,12 +53,37 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Beige;
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.lblElegir);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(760, 415);
+            this.panel1.Size = new System.Drawing.Size(847, 415);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(183, 89);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
+            // 
+            // lblElegir
+            // 
+            this.lblElegir.AutoSize = true;
+            this.lblElegir.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblElegir.Font = new System.Drawing.Font("Eras Demi ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblElegir.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblElegir.Location = new System.Drawing.Point(253, 105);
+            this.lblElegir.Name = "lblElegir";
+            this.lblElegir.Size = new System.Drawing.Size(360, 24);
+            this.lblElegir.TabIndex = 8;
+            this.lblElegir.Text = "Elige la compañia de tu preferencia";
             // 
             // panel3
             // 
@@ -64,6 +93,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(757, 71);
             this.panel3.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Font = new System.Drawing.Font("Eras Demi ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.Location = new System.Drawing.Point(308, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(227, 24);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Cotizacion de seguros";
             // 
             // pictureBox5
             // 
@@ -81,72 +122,74 @@
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(3, 125);
+            this.panel2.Location = new System.Drawing.Point(3, 159);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(757, 210);
+            this.panel2.Size = new System.Drawing.Size(830, 238);
             this.panel2.TabIndex = 4;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::CapaPresentacionWF.Properties.Resources.logo_Assa;
             this.pictureBox1.Location = new System.Drawing.Point(6, 55);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 141);
+            this.pictureBox1.Size = new System.Drawing.Size(182, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::CapaPresentacionWF.Properties.Resources.logo_America_seguros;
-            this.pictureBox4.Location = new System.Drawing.Point(569, 55);
+            this.pictureBox4.Location = new System.Drawing.Point(627, 55);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(175, 141);
+            this.pictureBox4.Size = new System.Drawing.Size(186, 162);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::CapaPresentacionWF.Properties.Resources.logo_Iniser;
-            this.pictureBox2.Location = new System.Drawing.Point(188, 55);
+            this.pictureBox2.Location = new System.Drawing.Point(210, 55);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(178, 141);
+            this.pictureBox2.Size = new System.Drawing.Size(191, 162);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::CapaPresentacionWF.Properties.Resources.logo_lafise_seguros;
-            this.pictureBox3.Location = new System.Drawing.Point(372, 55);
+            this.pictureBox3.Location = new System.Drawing.Point(424, 55);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(179, 141);
+            this.pictureBox3.Size = new System.Drawing.Size(186, 162);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Bisque;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(344, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Cotizacion de seguros";
             // 
             // Inicio1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 418);
+            this.BackColor = System.Drawing.Color.Beige;
+            this.ClientSize = new System.Drawing.Size(848, 517);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicio1";
-            this.Text = "Inicio1";
+            this.Text = "Seguros EBECSA";
+            this.Load += new System.EventHandler(this.Inicio1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -167,8 +210,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblElegir;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

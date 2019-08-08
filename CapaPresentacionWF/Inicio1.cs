@@ -16,5 +16,10 @@ namespace CapaPresentacionWF
         {
             InitializeComponent();
         }
+
+        private void Inicio1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
