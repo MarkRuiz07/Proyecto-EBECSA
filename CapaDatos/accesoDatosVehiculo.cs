@@ -21,13 +21,11 @@ namespace CapaDatos
         List<Vehiculo> listaVehiculo = null;
         public int insertarVehiculo(Vehiculo v)
         {
-
             try
             {
                 SqlConnection cnx = cn.conectar(); //Conexion
-
-                cm = new SqlCommand("Pr_Vehiculo", cnx); //Nombre del procedimiento 
-                cm.Parameters.AddWithValue("@b", 1); //Valores que toman los parametros
+                cm = new SqlCommand("Pr_Vehiculo", cnx);
+                cm.Parameters.AddWithValue("@b", 1);
                 cm.Parameters.AddWithValue("@idVehiculo", ""); //del procedimiento
                 cm.Parameters.AddWithValue("@marca", v.marca);
                 cm.Parameters.AddWithValue("@modelo", v.modelo);
@@ -41,23 +39,21 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@idseguros", v.idseguros);
                 cm.Parameters.AddWithValue("@idcategoria", v.idcategoria);
 
-                cm.CommandType = CommandType.StoredProcedure; //Tipo de comando ejecutado
-                cnx.Open(); //Abrir conexion de BD
-                cm.ExecuteNonQuery(); //Ejecucion de consulta
-                indicador = 1; //Valor del indicador
+                cm.CommandType = CommandType.StoredProcedure;
+                cnx.Open();
+                cm.ExecuteNonQuery();
+                indicador = 1;
             }
             catch (Exception e)
             {
-                e.Message.ToString(); //Mostrar mensaje en caso error
+                e.Message.ToString();
                 indicador = 0;
-
             }
             finally
             {
-                cm.Connection.Close(); //Cierre de conexion
+                cm.Connection.Close();
             }
             return indicador;
-
 
         }
 

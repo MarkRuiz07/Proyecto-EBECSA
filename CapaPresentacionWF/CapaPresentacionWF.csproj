@@ -53,6 +53,12 @@
     <Compile Include="Cotizacion.Designer.cs">
       <DependentUpon>Cotizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetallesCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesCotizacion.Designer.cs">
+      <DependentUpon>DetallesCotizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="fProspecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cotizacion.resx">
       <DependentUpon>Cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesCotizacion.resx">
+      <DependentUpon>DetallesCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fProspecto.resx">
       <DependentUpon>fProspecto.cs</DependentUpon>

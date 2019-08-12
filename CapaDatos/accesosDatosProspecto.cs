@@ -85,7 +85,7 @@ namespace CapaDatos
                     p.apellidoPaterno = dr["apellidoPaterno"].ToString();
                     p.apellidoMaterno = dr["apellidoMaterno"].ToString();
                     p.correoElectronico = dr["correoElectronico"].ToString();
-                    p.TelefonP = dr["TelefonoP"].ToString();
+                    p.TelefonP = dr["TelefonP"].ToString();
 
                     listaProspecto.Add(p); //Agregar registros encontrados a lista 
                 }

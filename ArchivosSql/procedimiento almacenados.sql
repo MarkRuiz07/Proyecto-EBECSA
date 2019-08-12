@@ -2,13 +2,13 @@
 
 use ProyectoBD
 
-CREATE PROCEDURE Pr_Aseguradora
+Create PROCEDURE Pr_Aseguradora
 @b int,@idAseguradora int, @nombreAs varchar(50),@idseguros int, @idProveedor int
 AS
 BEGIN
 SET NOCOUNT ON;
 IF @b=1
-INSERT INTO Aseguradora VALUES (@nombreas,@idseguros,@idProveedor);
+INSERT INTO Aseguradora VALUES (@nombreAs,@idseguros,@idProveedor);
 IF @b=2
 DELETE FROM Aseguradora WHERE idAseguradora=@idAseguradora;
 IF @b=3
@@ -21,7 +21,7 @@ WHERE nombreAs=@nombreas
 END
 GO
 
-CREATE PROCEDURE Pr_Cobertura 
+Create PROCEDURE Pr_Cobertura 
 @b int, @idcobertura int,@descripcion varchar(max),@sumaAsegurada smallmoney,@idseguros int
 AS
 BEGIN
@@ -40,7 +40,7 @@ WHERE sumaAsegurada=@sumaAsegurada
 END
 GO
 
-CREATE PROCEDURE Pr_Categoria
+Create PROCEDURE Pr_Categoria
 @b int, @idcategoria int, @tipo varchar(20)
 AS
 BEGIN
@@ -59,14 +59,14 @@ WHERE tipo=@tipo
 END
 GO
 
-CREATE PROCEDURE Pr_Prospecto
-@b int, @idProspecto int,@cedula varchar (14),@nombres varchar (50),@apellidospaterno varchar(50),@apellidosmaterno varchar(50),
-@correoelectronico varchar(80),@TelefonoP varchar(10)
+Create PROCEDURE Pr_Prospecto
+@b int, @idProspecto int,@cedula varchar (14),@nombres varchar (50),@apellidoPaterno varchar(50),@apellidoMaterno varchar(50),
+@correoElectronico varchar(80),@TelefonP varchar(10)
 AS
 BEGIN
 SET NOCOUNT ON;
 IF @b=1
-INSERT INTO Prospecto VALUES (@cedula,@nombres,@apellidospaterno,@apellidosmaterno,@correoelectronico,@TelefonoP);
+INSERT INTO Prospecto VALUES (@cedula,@nombres,@apellidoPaterno,@apellidoMaterno,@correoElectronico,@TelefonP);
 IF @b=2
 DELETE FROM Prospecto WHERE idProspecto=@idProspecto;
 IF @b=3
@@ -81,7 +81,7 @@ END
 GO
 
 
-CREATE PROCEDURE Pr_Proveedor 
+Create PROCEDURE Pr_Proveedor 
 @b int, @idProveedor int,@nombreprov varchar(30),@email varchar (50),@telefonoprov int,@cargo varchar (20)
 AS
 BEGIN
@@ -100,7 +100,7 @@ WHERE nombreprov=@nombreprov
 END
 GO
 
-CREATE PROCEDURE Pr_seguros 
+Create PROCEDURE Pr_seguros 
 @b int, @idseguros int ,@MontoSeguro int
 AS
 BEGIN
@@ -119,14 +119,14 @@ WHERE MontoSeguro=@MontoSeguro
 END
 GO
 
-CREATE PROCEDURE Pr_Vehiculo 
-@b int, @idVehiculo int,@marca varchar(30),@modelo varchar(50),@color varchar(20),@colorsecundario varchar(20),
-@añofabricacion int,@version varchar(max),@numeropasajero int,@numerocirculacion int,@idProspecto int, @idseguros int, @idcategoria int
+Create PROCEDURE Pr_Vehiculo 
+@b int, @idVehiculo int,@marca varchar(30),@modelo varchar(50),@color varchar(20),@colorSecundario varchar(20),
+@añoFabricacion int,@VersionCaracteristicas varchar(max),@NumeroPasajero int,@NumeroCirculacion varchar(30),@idProspecto int, @idseguros int, @idcategoria int
 AS
 BEGIN
 SET NOCOUNT ON;
 IF @b=1
-INSERT INTO Vehiculo VALUES (@marca,@modelo,@color,@colorsecundario,@añofabricacion,@version,@numeropasajero,@numerocirculacion,@idProspecto,@idseguros,@idvehiculo);
+INSERT INTO Vehiculo VALUES (@marca,@modelo,@color,@colorSecundario,@añoFabricacion,@VersionCaracteristicas,@NumeroPasajero,@NumeroCirculacion,@idProspecto,@idseguros,@idvehiculo);
 IF @b=2
 DELETE FROM Vehiculo WHERE idVehiculo=@idVehiculo;
 IF @b=3
@@ -136,6 +136,6 @@ UPDATE Vehiculo SET marca=@marca WHERE idVehiculo=@idVehiculo;
 IF @b=5
 SELECT * FROM Vehiculo
 WHERE modelo LIKE '%' + @modelo + '%' OR
- numerocirculacion LIKE '%' + @numerocirculacion + '%'
+ NumeroCirculacion LIKE '%' + @NumeroCirculacion + '%'
 END
 GO

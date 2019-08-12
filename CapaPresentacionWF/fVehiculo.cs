@@ -29,7 +29,7 @@ namespace CapaPresentacionWF
         {
             try
             {
-                if (buttonGuardar.Text == "Guardar")
+                if (buttonGuardar.Text == "Registrar")
                 {
                     Vehiculo objetoVehiculo = new Vehiculo();
                     objetoVehiculo.marca = textBoxMarca.Text;
@@ -40,9 +40,9 @@ namespace CapaPresentacionWF
                     objetoVehiculo.VersionCaracteristicas = textBoxVersionCar.Text;
                     objetoVehiculo.NumeroPasajeros = Convert.ToInt32(textBoxNumPas.Text);
                     objetoVehiculo.NumeroCirculacion = textBoxCirculacion.Text;
-                    objetoVehiculo.idProspecto = Convert.ToInt32(textBoxIDProspecto.Text);
-                    objetoVehiculo.idseguros = Convert.ToInt32(textBoxIDSeguros.Text);
-                    objetoVehiculo.idcategoria = Convert.ToInt32(textBoxIDCateg.Text);
+                    objetoVehiculo.idProspecto = Convert.ToInt32(comboBoxidProspecto.Text);
+                    objetoVehiculo.idcategoria = Convert.ToInt32(comboBoxidCategoria.Text);
+                    objetoVehiculo.idseguros = Convert.ToInt32(comboBoxidSeguros.Text);
 
                     if (logicaNV.insertarVehiculo(objetoVehiculo) > 0)
                     {
@@ -56,9 +56,9 @@ namespace CapaPresentacionWF
                         textBoxVersionCar.Text = "";
                         textBoxNumPas.Text = "";
                         textBoxCirculacion.Text = "";
-                        textBoxIDProspecto.Text = "";
-                        textBoxIDSeguros.Text = "";
-                        textBoxIDCateg.Text = "";
+                        comboBoxidProspecto.Text = "";
+                        comboBoxidCategoria.Text = "";
+                        comboBoxidSeguros.Text = "";
                         tabControlVehiculo.SelectedTab = tabPage2;
 
                     }
@@ -82,9 +82,6 @@ namespace CapaPresentacionWF
                     objetoVehiculo.VersionCaracteristicas = textBoxVersionCar.Text;
                     objetoVehiculo.NumeroPasajeros = Convert.ToInt32(textBoxNumPas.Text);
                     objetoVehiculo.NumeroCirculacion = textBoxCirculacion.Text;
-                    objetoVehiculo.idProspecto = Convert.ToInt32(textBoxIDProspecto.Text);
-                    objetoVehiculo.idseguros = Convert.ToInt32(textBoxIDSeguros.Text);
-                    objetoVehiculo.idcategoria = Convert.ToInt32(textBoxIDCateg.Text);
 
                     if (logicaNV.EditarVehiculo(objetoVehiculo)>0)
                     {
@@ -98,16 +95,13 @@ namespace CapaPresentacionWF
                         textBoxVersionCar.Text = "";
                         textBoxNumPas.Text = "";
                         textBoxCirculacion.Text = "";
-                        textBoxIDProspecto.Text = "";
-                        textBoxIDSeguros.Text = "";
-                        textBoxIDCateg.Text = "";
                         tabControlVehiculo.SelectedTab = tabPage2;
                     }
                     else
                     {
                         MessageBox.Show("Error al actualizar dato");
                     }
-                    buttonGuardar.Text = "Guardar";
+                    buttonGuardar.Text = "Registrar";
                 }
                
             }
@@ -159,10 +153,6 @@ namespace CapaPresentacionWF
             textBoxVersionCar.Text = dataGridViewVehiculo.CurrentRow.Cells["VersionCaracteristicas"].Value.ToString();
             textBoxNumPas.Text = dataGridViewVehiculo.CurrentRow.Cells["NumeroPasajeros"].Value.ToString();
             textBoxCirculacion.Text = dataGridViewVehiculo.CurrentRow.Cells["NumeroCirculacion"].Value.ToString();
-            textBoxIDProspecto.Text = dataGridViewVehiculo.CurrentRow.Cells["idProspecto"].Value.ToString();
-            textBoxIDSeguros.Text = dataGridViewVehiculo.CurrentRow.Cells["idseguros"].Value.ToString();
-            textBoxIDCateg.Text = dataGridViewVehiculo.CurrentRow.Cells["idcategoria"].Value.ToString();
-
             tabControlVehiculo.SelectedTab = tabPage1;
             buttonGuardar.Text = "Actualizar";
         }
@@ -174,6 +164,11 @@ namespace CapaPresentacionWF
         }
 
         private void dataGridViewVehiculo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void labelCircu_Click(object sender, EventArgs e)
         {
 
         }

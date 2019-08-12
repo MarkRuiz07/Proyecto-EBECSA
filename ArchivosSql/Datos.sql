@@ -2,7 +2,7 @@ use ProyectoBD
 
 --datos TABLA aseguradora
 
-SET IDENTITY_INSERT Aseguradora ON
+SET IDENTITY_INSERT Aseguradora off
 go
 
 INSERT INTO Aseguradora (nombreAs)
@@ -11,6 +11,7 @@ VALUES
   ('AMERICA'),
   ('LAFISE'),
   ('ASSA')
+
 
 ---datos TABLA cobertura
 

@@ -33,7 +33,7 @@ namespace CapaPresentacionWF
         {
             try
             {
-                if (btnGuardar.Text == "Guardar")
+                if (btnGuardar.Text == "Registrar")
                 {
                     Prospecto objProspecto = new Prospecto();
                     objProspecto.nombres = textBoxNombre.Text;
@@ -92,7 +92,7 @@ namespace CapaPresentacionWF
                         MessageBox.Show("Error al Actualizar Prospecto");
                     }
 
-                    btnGuardar.Text = ("Guardar");
+                    btnGuardar.Text = ("Registrar");
                 }
 
             }
