@@ -29,7 +29,7 @@ namespace CapaDatos
 
                 cm = new SqlCommand("Pr_Categoria", cnx); //Nombre del procedimiento 
                 cm.Parameters.AddWithValue("@b", 1); //Valores que toman los parametros
-                cm.Parameters.AddWithValue("@idacategoria", ""); //del procedimiento
+                cm.Parameters.AddWithValue("@idcategoria", ""); //del procedimiento
                 cm.Parameters.AddWithValue("@tipo", ct.tipo);
                
 
@@ -54,6 +54,45 @@ namespace CapaDatos
 
         }
 
+        public List<Categoria> seleccionarCategorias() //listar los datos de categoria
+        {
+
+            SqlConnection cnn = cn.conectar();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Pr_Categoria", cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@b", 3);             //valores de la tabla
+                cmd.Parameters.AddWithValue("@idcategoria", 0);
+                cmd.Parameters.AddWithValue("@tipo", "");
+                cnn.Open();
+                SqlDataReader lector = cmd.ExecuteReader(); //leer los datos tabla sql
+
+                List<Categoria> listado = new List<Categoria>(); //se agrega en una lista atraves de un siclo
+                while (lector.Read())
+                {
+                    listado.Add(new Categoria()
+                    {
+                        idcategoria = int.Parse(lector[0].ToString()),
+                        tipo = lector[1].ToString()
+                    });
+                }
+
+                return listado;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cnn.Close();
+            }
+
+
+        }
+
         public List<Categoria> listarCategoria()
         {
             try
@@ -61,7 +100,7 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("Pr_Categoria", cnx);
-                cm.Parameters.AddWithValue("b", 3);
+                cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idcategoria", "");
                 cm.Parameters.AddWithValue("@tipo", "");
                 

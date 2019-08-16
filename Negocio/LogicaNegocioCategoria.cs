@@ -10,11 +10,18 @@ namespace CapaNegocio
 {
     public class LogicaNegocioCategoria
     {
-        accesoDatosCategoria cat= new accesoDatosCategoria();
+        accesoDatosCategoria cat = new accesoDatosCategoria();
 
         public int insertarCategoria(Categoria c)
         {
             return cat.insertarCategoria(c);
+        }
+
+        public List<Categoria> seleccionarCategorias()
+        {
+
+            return cat.seleccionarCategorias();
+
         }
 
         public List<Categoria> listarCategoria()

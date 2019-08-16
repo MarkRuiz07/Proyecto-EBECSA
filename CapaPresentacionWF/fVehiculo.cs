@@ -15,6 +15,7 @@ namespace CapaPresentacionWF
     public partial class FVehiculo : Form
     {
         LogicaNegocioVehiculo logicaNV = new LogicaNegocioVehiculo();
+        LogicaNegocioCategoria logicaC = new LogicaNegocioCategoria();
         public FVehiculo()
         {
             InitializeComponent();
@@ -41,8 +42,8 @@ namespace CapaPresentacionWF
                     objetoVehiculo.NumeroPasajeros = Convert.ToInt32(textBoxNumPas.Text);
                     objetoVehiculo.NumeroCirculacion = textBoxCirculacion.Text;
                     objetoVehiculo.idProspecto = Convert.ToInt32(comboBoxidProspecto.Text);
-                    objetoVehiculo.idcategoria = Convert.ToInt32(comboBoxidCategoria.Text);
-                    objetoVehiculo.idseguros = Convert.ToInt32(comboBoxidSeguros.Text);
+                    objetoVehiculo.idcategoria = Convert.ToInt32(comboBoxidCategoria.SelectedValue.ToString());
+                    objetoVehiculo.idseguros = Convert.ToInt32(textBoxMontoSeguro.Text);
 
                     if (logicaNV.insertarVehiculo(objetoVehiculo) > 0)
                     {
@@ -58,7 +59,7 @@ namespace CapaPresentacionWF
                         textBoxCirculacion.Text = "";
                         comboBoxidProspecto.Text = "";
                         comboBoxidCategoria.Text = "";
-                        comboBoxidSeguros.Text = "";
+                        textBoxMontoSeguro.Text = "";
                         tabControlVehiculo.SelectedTab = tabPage2;
 
                     }
@@ -117,6 +118,18 @@ namespace CapaPresentacionWF
             textBoxID.Visible = false;
             labelID.Visible = false;
             dataGridViewVehiculo.DataSource = logicaNV.listarVehiculo();
+
+            try
+            {
+                comboBoxidCategoria.DataSource = logicaC.seleccionarCategorias();
+                comboBoxidCategoria.ValueMember = "idcategoria";
+                comboBoxidCategoria.DisplayMember = "tipo";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void buttonEliminar_Click(object sender, EventArgs e)

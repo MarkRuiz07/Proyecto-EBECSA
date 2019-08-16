@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FVehiculo));
             this.tabControlVehiculo = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBoxidProspecto = new System.Windows.Forms.ComboBox();
+            this.comboBoxidCategoria = new System.Windows.Forms.ComboBox();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxCirculacion = new System.Windows.Forms.TextBox();
@@ -52,21 +54,27 @@
             this.lblMarca = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridViewVehiculo = new System.Windows.Forms.DataGridView();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.labelBuscar = new System.Windows.Forms.Label();
-            this.comboBoxidSeguros = new System.Windows.Forms.ComboBox();
-            this.comboBoxidCategoria = new System.Windows.Forms.ComboBox();
-            this.comboBoxidProspecto = new System.Windows.Forms.ComboBox();
+            this.IdSeguros = new System.Windows.Forms.Label();
+            this.idCategoria = new System.Windows.Forms.Label();
+            this.IdProspecto = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBoxMontoSeguro = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControlVehiculo.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehiculo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlVehiculo
@@ -74,19 +82,25 @@
             this.tabControlVehiculo.Controls.Add(this.tabPage1);
             this.tabControlVehiculo.Controls.Add(this.tabPage2);
             this.tabControlVehiculo.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlVehiculo.Location = new System.Drawing.Point(3, 0);
+            this.tabControlVehiculo.Location = new System.Drawing.Point(3, 8);
             this.tabControlVehiculo.Name = "tabControlVehiculo";
             this.tabControlVehiculo.SelectedIndex = 0;
-            this.tabControlVehiculo.Size = new System.Drawing.Size(935, 536);
+            this.tabControlVehiculo.Size = new System.Drawing.Size(947, 649);
             this.tabControlVehiculo.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage1.Controls.Add(this.pictureBox3);
+            this.tabPage1.Controls.Add(this.textBoxMontoSeguro);
+            this.tabPage1.Controls.Add(this.pictureBox2);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.IdProspecto);
+            this.tabPage1.Controls.Add(this.idCategoria);
+            this.tabPage1.Controls.Add(this.IdSeguros);
             this.tabPage1.Controls.Add(this.comboBoxidProspecto);
             this.tabPage1.Controls.Add(this.comboBoxidCategoria);
-            this.tabPage1.Controls.Add(this.comboBoxidSeguros);
             this.tabPage1.Controls.Add(this.buttonGuardar);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.textBoxCirculacion);
@@ -112,17 +126,35 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(927, 504);
+            this.tabPage1.Size = new System.Drawing.Size(939, 617);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Datos";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // comboBoxidProspecto
+            // 
+            this.comboBoxidProspecto.FormattingEnabled = true;
+            this.comboBoxidProspecto.Location = new System.Drawing.Point(611, 238);
+            this.comboBoxidProspecto.Name = "comboBoxidProspecto";
+            this.comboBoxidProspecto.Size = new System.Drawing.Size(35, 27);
+            this.comboBoxidProspecto.TabIndex = 32;
+            this.comboBoxidProspecto.Visible = false;
+            // 
+            // comboBoxidCategoria
+            // 
+            this.comboBoxidCategoria.Font = new System.Drawing.Font("Eras Medium ITC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxidCategoria.FormattingEnabled = true;
+            this.comboBoxidCategoria.Location = new System.Drawing.Point(220, 187);
+            this.comboBoxidCategoria.Name = "comboBoxidCategoria";
+            this.comboBoxidCategoria.Size = new System.Drawing.Size(260, 26);
+            this.comboBoxidCategoria.TabIndex = 31;
             // 
             // buttonGuardar
             // 
             this.buttonGuardar.BackColor = System.Drawing.Color.DarkOrange;
             this.buttonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonGuardar.Location = new System.Drawing.Point(403, 464);
+            this.buttonGuardar.Location = new System.Drawing.Point(416, 534);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(106, 34);
             this.buttonGuardar.TabIndex = 29;
@@ -141,7 +173,7 @@
             // textBoxCirculacion
             // 
             this.textBoxCirculacion.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCirculacion.Location = new System.Drawing.Point(645, 253);
+            this.textBoxCirculacion.Location = new System.Drawing.Point(623, 396);
             this.textBoxCirculacion.Name = "textBoxCirculacion";
             this.textBoxCirculacion.Size = new System.Drawing.Size(236, 22);
             this.textBoxCirculacion.TabIndex = 22;
@@ -150,7 +182,7 @@
             // 
             this.labelCircu.AutoSize = true;
             this.labelCircu.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCircu.Location = new System.Drawing.Point(503, 252);
+            this.labelCircu.Location = new System.Drawing.Point(500, 396);
             this.labelCircu.Name = "labelCircu";
             this.labelCircu.Size = new System.Drawing.Size(92, 19);
             this.labelCircu.TabIndex = 21;
@@ -160,7 +192,7 @@
             // textBoxNumPas
             // 
             this.textBoxNumPas.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNumPas.Location = new System.Drawing.Point(645, 184);
+            this.textBoxNumPas.Location = new System.Drawing.Point(623, 336);
             this.textBoxNumPas.Name = "textBoxNumPas";
             this.textBoxNumPas.Size = new System.Drawing.Size(72, 22);
             this.textBoxNumPas.TabIndex = 20;
@@ -169,7 +201,7 @@
             // 
             this.labelNumero.AutoSize = true;
             this.labelNumero.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumero.Location = new System.Drawing.Point(503, 171);
+            this.labelNumero.Location = new System.Drawing.Point(500, 320);
             this.labelNumero.Name = "labelNumero";
             this.labelNumero.Size = new System.Drawing.Size(98, 38);
             this.labelNumero.TabIndex = 19;
@@ -178,7 +210,7 @@
             // textBoxVersionCar
             // 
             this.textBoxVersionCar.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxVersionCar.Location = new System.Drawing.Point(645, 305);
+            this.textBoxVersionCar.Location = new System.Drawing.Point(623, 441);
             this.textBoxVersionCar.Multiline = true;
             this.textBoxVersionCar.Name = "textBoxVersionCar";
             this.textBoxVersionCar.Size = new System.Drawing.Size(260, 76);
@@ -188,7 +220,7 @@
             // 
             this.labelVersion.AutoSize = true;
             this.labelVersion.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVersion.Location = new System.Drawing.Point(503, 305);
+            this.labelVersion.Location = new System.Drawing.Point(500, 441);
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(117, 38);
             this.labelVersion.TabIndex = 17;
@@ -197,17 +229,17 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(244, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(313, 16);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(65, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
             // textBoxAñoFab
             // 
             this.textBoxAñoFab.Font = new System.Drawing.Font("Eras Demi ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAñoFab.Location = new System.Drawing.Point(645, 109);
+            this.textBoxAñoFab.Location = new System.Drawing.Point(623, 277);
             this.textBoxAñoFab.Name = "textBoxAñoFab";
             this.textBoxAñoFab.Size = new System.Drawing.Size(195, 22);
             this.textBoxAñoFab.TabIndex = 15;
@@ -216,7 +248,7 @@
             // 
             this.labelAñoFab.AutoSize = true;
             this.labelAñoFab.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAñoFab.Location = new System.Drawing.Point(503, 93);
+            this.labelAñoFab.Location = new System.Drawing.Point(502, 261);
             this.labelAñoFab.Name = "labelAñoFab";
             this.labelAñoFab.Size = new System.Drawing.Size(96, 38);
             this.labelAñoFab.TabIndex = 14;
@@ -225,7 +257,7 @@
             // textBoxColorSecun
             // 
             this.textBoxColorSecun.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxColorSecun.Location = new System.Drawing.Point(167, 321);
+            this.textBoxColorSecun.Location = new System.Drawing.Point(220, 457);
             this.textBoxColorSecun.Name = "textBoxColorSecun";
             this.textBoxColorSecun.Size = new System.Drawing.Size(195, 22);
             this.textBoxColorSecun.TabIndex = 13;
@@ -234,7 +266,7 @@
             // 
             this.lblColorSec.AutoSize = true;
             this.lblColorSec.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColorSec.Location = new System.Drawing.Point(59, 305);
+            this.lblColorSec.Location = new System.Drawing.Point(111, 441);
             this.lblColorSec.Name = "lblColorSec";
             this.lblColorSec.Size = new System.Drawing.Size(97, 38);
             this.lblColorSec.TabIndex = 12;
@@ -243,7 +275,7 @@
             // textBoxColor
             // 
             this.textBoxColor.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxColor.Location = new System.Drawing.Point(167, 253);
+            this.textBoxColor.Location = new System.Drawing.Point(220, 396);
             this.textBoxColor.Name = "textBoxColor";
             this.textBoxColor.Size = new System.Drawing.Size(195, 22);
             this.textBoxColor.TabIndex = 11;
@@ -252,7 +284,7 @@
             // 
             this.lblColor.AutoSize = true;
             this.lblColor.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(107, 252);
+            this.lblColor.Location = new System.Drawing.Point(159, 396);
             this.lblColor.Name = "lblColor";
             this.lblColor.Size = new System.Drawing.Size(49, 19);
             this.lblColor.TabIndex = 10;
@@ -261,7 +293,7 @@
             // textBoxModelo
             // 
             this.textBoxModelo.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxModelo.Location = new System.Drawing.Point(167, 203);
+            this.textBoxModelo.Location = new System.Drawing.Point(220, 336);
             this.textBoxModelo.Name = "textBoxModelo";
             this.textBoxModelo.Size = new System.Drawing.Size(195, 22);
             this.textBoxModelo.TabIndex = 9;
@@ -270,7 +302,7 @@
             // 
             this.lblModelo.AutoSize = true;
             this.lblModelo.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModelo.Location = new System.Drawing.Point(95, 202);
+            this.lblModelo.Location = new System.Drawing.Point(148, 336);
             this.lblModelo.Name = "lblModelo";
             this.lblModelo.Size = new System.Drawing.Size(66, 19);
             this.lblModelo.TabIndex = 8;
@@ -279,7 +311,7 @@
             // textBoxMarca
             // 
             this.textBoxMarca.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMarca.Location = new System.Drawing.Point(167, 148);
+            this.textBoxMarca.Location = new System.Drawing.Point(220, 277);
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(195, 22);
             this.textBoxMarca.TabIndex = 7;
@@ -288,7 +320,7 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(106, 147);
+            this.lblMarca.Location = new System.Drawing.Point(159, 277);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(55, 19);
             this.lblMarca.TabIndex = 6;
@@ -297,7 +329,7 @@
             // textBoxID
             // 
             this.textBoxID.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxID.Location = new System.Drawing.Point(167, 93);
+            this.textBoxID.Location = new System.Drawing.Point(220, 238);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(43, 22);
             this.textBoxID.TabIndex = 5;
@@ -306,22 +338,11 @@
             // 
             this.labelID.AutoSize = true;
             this.labelID.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelID.Location = new System.Drawing.Point(135, 94);
+            this.labelID.Location = new System.Drawing.Point(175, 238);
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(26, 19);
             this.labelID.TabIndex = 4;
             this.labelID.Text = "ID";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Eras Bold ITC", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(350, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 31);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Datos del Vehiculo";
             // 
             // tabPage2
             // 
@@ -335,7 +356,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(927, 504);
+            this.tabPage2.Size = new System.Drawing.Size(927, 708);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalles";
             // 
@@ -393,36 +414,89 @@
             this.labelBuscar.TabIndex = 0;
             this.labelBuscar.Text = "Buscar";
             // 
-            // comboBoxidSeguros
+            // IdSeguros
             // 
-            this.comboBoxidSeguros.FormattingEnabled = true;
-            this.comboBoxidSeguros.Location = new System.Drawing.Point(167, 369);
-            this.comboBoxidSeguros.Name = "comboBoxidSeguros";
-            this.comboBoxidSeguros.Size = new System.Drawing.Size(43, 27);
-            this.comboBoxidSeguros.TabIndex = 30;
+            this.IdSeguros.AutoSize = true;
+            this.IdSeguros.Location = new System.Drawing.Point(583, 189);
+            this.IdSeguros.Name = "IdSeguros";
+            this.IdSeguros.Size = new System.Drawing.Size(112, 19);
+            this.IdSeguros.TabIndex = 33;
+            this.IdSeguros.Text = "MontoSeguro";
             // 
-            // comboBoxidCategoria
+            // idCategoria
             // 
-            this.comboBoxidCategoria.FormattingEnabled = true;
-            this.comboBoxidCategoria.Location = new System.Drawing.Point(167, 418);
-            this.comboBoxidCategoria.Name = "comboBoxidCategoria";
-            this.comboBoxidCategoria.Size = new System.Drawing.Size(43, 27);
-            this.comboBoxidCategoria.TabIndex = 31;
+            this.idCategoria.AutoSize = true;
+            this.idCategoria.Location = new System.Drawing.Point(85, 187);
+            this.idCategoria.Name = "idCategoria";
+            this.idCategoria.Size = new System.Drawing.Size(135, 19);
+            this.idCategoria.TabIndex = 34;
+            this.idCategoria.Text = "Tipo de Vehiculo";
+            this.idCategoria.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // comboBoxidProspecto
+            // IdProspecto
             // 
-            this.comboBoxidProspecto.FormattingEnabled = true;
-            this.comboBoxidProspecto.Location = new System.Drawing.Point(526, 406);
-            this.comboBoxidProspecto.Name = "comboBoxidProspecto";
-            this.comboBoxidProspecto.Size = new System.Drawing.Size(35, 27);
-            this.comboBoxidProspecto.TabIndex = 32;
+            this.IdProspecto.AutoSize = true;
+            this.IdProspecto.Location = new System.Drawing.Point(486, 241);
+            this.IdProspecto.Name = "IdProspecto";
+            this.IdProspecto.Size = new System.Drawing.Size(106, 19);
+            this.IdProspecto.TabIndex = 35;
+            this.IdProspecto.Text = "ID prospecto";
+            this.IdProspecto.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Eras Demi ITC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(280, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(357, 23);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Seleccione el tipo de vehiculo a cotizar";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(46, 182);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox2.TabIndex = 37;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBoxMontoSeguro
+            // 
+            this.textBoxMontoSeguro.Font = new System.Drawing.Font("Eras Medium ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMontoSeguro.Location = new System.Drawing.Point(701, 187);
+            this.textBoxMontoSeguro.Name = "textBoxMontoSeguro";
+            this.textBoxMontoSeguro.Size = new System.Drawing.Size(97, 26);
+            this.textBoxMontoSeguro.TabIndex = 38;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(552, 182);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 37);
+            this.pictureBox3.TabIndex = 39;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Eras Demi ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(384, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Datos del Vehiculo";
             // 
             // FVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(943, 548);
+            this.ClientSize = new System.Drawing.Size(943, 618);
             this.Controls.Add(this.tabControlVehiculo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -436,6 +510,8 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehiculo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,7 +528,6 @@
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label labelID;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox textBoxAñoFab;
         private System.Windows.Forms.Label labelAñoFab;
@@ -472,9 +547,16 @@
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Label labelBuscar;
-        private System.Windows.Forms.ComboBox comboBoxidSeguros;
         private System.Windows.Forms.ComboBox comboBoxidCategoria;
         private System.Windows.Forms.ComboBox comboBoxidProspecto;
+        private System.Windows.Forms.Label IdProspecto;
+        private System.Windows.Forms.Label idCategoria;
+        private System.Windows.Forms.Label IdSeguros;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox textBoxMontoSeguro;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

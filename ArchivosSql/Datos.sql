@@ -43,5 +43,5 @@ values
 	  (150)
 
 insert into Proveedor(nombreprov,cargo,telefonoprov,email)
-values 
+values
        ('Rixi Moreno Alvarez','Gerente',57225796,'Riximoreno@gmail.com')

@@ -85,7 +85,6 @@ C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaPresentacionWF\obj\Debug\CapaPr
 C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.Inicio1.resources
 C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.Properties.Resources.resources
 C:\Users\HP\Documents\GitHub\Proyecto-EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csproj.GenerateResource.Cache
-C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.Cotizacion.resources
 C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.Inicio.resources
 C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.Inicio1.resources
 C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.DetallesCotizacion.resources
