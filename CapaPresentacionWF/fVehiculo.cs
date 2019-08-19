@@ -15,7 +15,10 @@ namespace CapaPresentacionWF
     public partial class FVehiculo : Form
     {
         LogicaNegocioVehiculo logicaNV = new LogicaNegocioVehiculo();
-        LogicaNegocioCategoria logicaC = new LogicaNegocioCategoria();
+        LogicaNegocioSeguros logicaSN = new LogicaNegocioSeguros();
+
+        public int ProspectoId { get; set; }
+     
         public FVehiculo()
         {
             InitializeComponent();
@@ -41,9 +44,9 @@ namespace CapaPresentacionWF
                     objetoVehiculo.VersionCaracteristicas = textBoxVersionCar.Text;
                     objetoVehiculo.NumeroPasajeros = Convert.ToInt32(textBoxNumPas.Text);
                     objetoVehiculo.NumeroCirculacion = textBoxCirculacion.Text;
-                    objetoVehiculo.idProspecto = Convert.ToInt32(comboBoxidProspecto.Text);
-                    objetoVehiculo.idcategoria = Convert.ToInt32(comboBoxidCategoria.SelectedValue.ToString());
-                    objetoVehiculo.idseguros = Convert.ToInt32(textBoxMontoSeguro.Text);
+                    objetoVehiculo.idProspecto = this.ProspectoId;
+                    objetoVehiculo.idseguros = Convert.ToInt32(cbxTipoVehiculo.SelectedValue.ToString());
+                   // objetoVehiculo.idseguros = Convert.ToInt32(txtMonto.Text);
 
                     if (logicaNV.insertarVehiculo(objetoVehiculo) > 0)
                     {
@@ -57,9 +60,9 @@ namespace CapaPresentacionWF
                         textBoxVersionCar.Text = "";
                         textBoxNumPas.Text = "";
                         textBoxCirculacion.Text = "";
-                        comboBoxidProspecto.Text = "";
-                        comboBoxidCategoria.Text = "";
-                        textBoxMontoSeguro.Text = "";
+                        cbxProspecto.Text = "";
+                        cbxTipoVehiculo.Text = "";
+                        txtMonto.Text = "";
                         tabControlVehiculo.SelectedTab = tabPage2;
 
                     }
@@ -106,7 +109,7 @@ namespace CapaPresentacionWF
                 }
                
             }
-            catch 
+            catch(Exception error)
             {
                 MessageBox.Show("ERROR");
             }
@@ -121,9 +124,9 @@ namespace CapaPresentacionWF
 
             try
             {
-                comboBoxidCategoria.DataSource = logicaC.seleccionarCategorias();
-                comboBoxidCategoria.ValueMember = "idcategoria";
-                comboBoxidCategoria.DisplayMember = "tipo";
+                cbxTipoVehiculo.DataSource = logicaSN.selectVehiculo();
+                cbxTipoVehiculo.ValueMember = "idseguros";
+                cbxTipoVehiculo.DisplayMember = "tipo";
 
             }
             catch (Exception ex)
@@ -185,5 +188,7 @@ namespace CapaPresentacionWF
         {
 
         }
+
+      
     }
 }

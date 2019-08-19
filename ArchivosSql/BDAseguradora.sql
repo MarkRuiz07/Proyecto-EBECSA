@@ -16,13 +16,14 @@ CONSTRAINT Prospecto_Cedula UNIQUE (cedula,correoElectronico,TelefonP),
 
 Create Table Seguros(
 idseguros int Primary Key identity (1,1),
+tipo varchar(50),
 MontoSeguro int,
 );
 
-Create table Categoria(
+/*Create table Categoria(
 idcategoria int primary key identity(1,1),
 tipo varchar(50),
-);
+);*/
 
 Create table Vehiculo(
 idVehiculo int primary key identity (1,1),
@@ -36,11 +37,9 @@ NumeroPasajeros int,
 NumeroCirculacion varchar(30),
 idProspecto int,
 idseguros int,
-idcategoria int,
 CONSTRAINT NumeroCirculacion_modelo UNIQUE (NumeroCirculacion,modelo),
 foreign key (idProspecto) references Prospecto (idProspecto),
 foreign key (idseguros) references Seguros (idseguros),
-foreign key (idcategoria) references Categoria (idcategoria),
 );
 
 Create Table Cobertura(

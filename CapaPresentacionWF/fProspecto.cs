@@ -166,5 +166,19 @@ namespace CapaPresentacionWF
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void dataGridViewProspecto_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridViewProspecto.SelectedRows.Count > 0)
+            {
+                FVehiculo fp = new FVehiculo();
+                fp.ProspectoId = int.Parse(dataGridViewProspecto.SelectedRows[0].Cells[0].Value.ToString());
+                fp.Show();
+            }
+        }
     }
 }

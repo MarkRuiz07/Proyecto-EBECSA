@@ -40,7 +40,7 @@ WHERE sumaAsegurada=@sumaAsegurada
 END
 GO
 
-Create PROCEDURE Pr_Categoria
+/*Create PROCEDURE Pr_Categoria
 @b int, @idcategoria int, @tipo varchar(20)
 AS
 BEGIN
@@ -57,7 +57,7 @@ IF @b=5
 SELECT * FROM Categoria
 WHERE tipo=@tipo
 END
-GO
+GO*/
 
 Create PROCEDURE Pr_Prospecto
 @b int, @idProspecto int,@cedula varchar (14),@nombres varchar (50),@apellidoPaterno varchar(50),@apellidoMaterno varchar(50),
@@ -101,12 +101,12 @@ END
 GO
 
 Create PROCEDURE Pr_seguros 
-@b int, @idseguros int ,@MontoSeguro int
+@b int, @idseguros int ,@tipo varchar(50),@MontoSeguro int
 AS
 BEGIN
 SET NOCOUNT ON;
 IF @b=1
-INSERT INTO Seguros VALUES (@MontoSeguro);
+INSERT INTO Seguros VALUES (@tipo,@MontoSeguro);
 IF @b=2
 DELETE FROM Seguros WHERE idseguros=@idseguros;
 IF @b=3
@@ -115,18 +115,19 @@ IF @b=4
 UPDATE Seguros SET MontoSeguro=@MontoSeguro WHERE idseguros=@idseguros;
 IF @b=5
 SELECT * FROM Seguros
-WHERE MontoSeguro=@MontoSeguro
+WHERE MontoSeguro LIKE '%' + @MontoSeguro + '%' OR
+tipo LIKE '%' + @tipo + '%'
 END
 GO
 
 Create PROCEDURE Pr_Vehiculo 
 @b int, @idVehiculo int,@marca varchar(30),@modelo varchar(50),@color varchar(20),@colorSecundario varchar(20),
-@añoFabricacion int,@VersionCaracteristicas varchar(max),@NumeroPasajero int,@NumeroCirculacion varchar(30),@idProspecto int, @idseguros int, @idcategoria int
+@añoFabricacion int,@VersionCaracteristicas varchar(max),@NumeroPasajero int,@NumeroCirculacion varchar(30),@idProspecto int, @idseguros int
 AS
 BEGIN
 SET NOCOUNT ON;
 IF @b=1
-INSERT INTO Vehiculo VALUES (@marca,@modelo,@color,@colorSecundario,@añoFabricacion,@VersionCaracteristicas,@NumeroPasajero,@NumeroCirculacion,@idProspecto,@idseguros,@idvehiculo);
+INSERT INTO Vehiculo VALUES (@marca,@modelo,@color,@colorSecundario,@añoFabricacion,@VersionCaracteristicas,@NumeroPasajero,@NumeroCirculacion,@idProspecto,@idseguros);
 IF @b=2
 DELETE FROM Vehiculo WHERE idVehiculo=@idVehiculo;
 IF @b=3

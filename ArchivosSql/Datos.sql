@@ -23,24 +23,25 @@ VALUES
 
 --datos Tabla Categoria
 
- insert into Categoria (tipo)
+ /*insert into Categoria (tipo)
  values
         ('Vehiculo Particular'),
         ('Moto'),
         ('Camion Liviano menor a 3 Toneladas'),
 		('Camion Mayor a 3.5 Toneladas'),
-		('Cabezal')
+		('Cabezal')*/
 
-	select * from Categoria
+	--select * from Categoria
 
 --datos Tablas Seguros
 
-insert into Seguros(MontoSeguro)
+insert into Seguros(tipo,MontoSeguro)
 values
-      (35),
-      (55),
-	  (80),
-	  (150)
+      ('Moto',35),
+      ('Vehiculo Particular',55),
+	  ('Camion Liviano menor a 3 Toneladas',55),
+	  ('Camion Mayor a 3.5 Toneladas',80),
+	  ('Cabezal',150)
 
 insert into Proveedor(nombreprov,cargo,telefonoprov,email)
 values

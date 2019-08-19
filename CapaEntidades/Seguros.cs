@@ -12,5 +12,7 @@ namespace CapaEntidades
 
         public int MontoSeguro { get; set; }
 
+        public string tipo { get; set; }
+
     }
 }

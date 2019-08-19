@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aseguradora.cs" />
-    <Compile Include="Categoria.cs" />
     <Compile Include="Cobertura.cs" />
     <Compile Include="Comentarios.cs" />
     <Compile Include="Prospecto.cs" />

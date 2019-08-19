@@ -31,5 +31,14 @@ namespace CapaPresentacionWF
         {
 
         }
+
+        private void picBoxInicio_Click(object sender, EventArgs e)
+        {
+            Inicio1 fm = new Inicio1(); //abre un nuevo formulario y cierra el principal sin terminar la ejecucion 
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();//para cerrar 
+            
+        }
     }
 }

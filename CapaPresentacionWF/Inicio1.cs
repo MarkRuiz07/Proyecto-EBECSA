@@ -21,5 +21,34 @@ namespace CapaPresentacionWF
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            fProspecto fp = new fProspecto();
+            fp.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            fProspecto fp = new fProspecto();
+            fp.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            fProspecto fp = new fProspecto();
+            fp.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            fProspecto fp = new fProspecto();
+            fp.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

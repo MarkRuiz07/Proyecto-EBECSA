@@ -38,5 +38,10 @@ namespace CapaNegocio
             return sg.buscarSeguro(dato);
         }
 
+        public List<Seguros> selectVehiculo()
+        {
+            return sg.selectVehiculo();
+        }
+
     }
 }

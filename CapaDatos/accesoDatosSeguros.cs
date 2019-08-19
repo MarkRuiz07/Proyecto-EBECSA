@@ -30,6 +30,7 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@b", 1); //Valores que toman los parametros
                 cm.Parameters.AddWithValue("@idseguros", ""); //del procedimiento
                 cm.Parameters.AddWithValue("@MontoSeguro", s.MontoSeguro);
+                cm.Parameters.AddWithValue("@tipo",s.tipo );
 
 
                 cm.CommandType = CommandType.StoredProcedure; //Tipo de comando ejecutado
@@ -59,9 +60,10 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("Pr_seguros", cnx);
-                cm.Parameters.AddWithValue("b", 3);
+                cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idseguros", "");
                 cm.Parameters.AddWithValue("@MontoSeguro", "");
+                cm.Parameters.AddWithValue("@tipo", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -72,7 +74,8 @@ namespace CapaDatos
                     Seguros s = new Seguros();
                     s.idseguros = Convert.ToInt32(dr["idseguros"].ToString());
                     s.MontoSeguro = Convert.ToInt32( dr["MontoSeguro"].ToString());
-                   
+                    s.MontoSeguro = Convert.ToInt32(dr["tipo"].ToString());
+
 
                     listaSeguros.Add(s); //Agregar registros encontrados a lista 
                 }
@@ -91,6 +94,46 @@ namespace CapaDatos
 
         }
 
+        public List<Seguros> selectVehiculo() //listar los datos de categoria
+        {
+
+            SqlConnection cnn = cn.conectar();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Pr_seguros", cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@b", 3);             //valores de la tabla
+                cmd.Parameters.AddWithValue("@idseguros", 0);
+                cmd.Parameters.AddWithValue("@tipo", "");
+                cmd.Parameters.AddWithValue("@MontoSeguro","");
+                cnn.Open();
+                SqlDataReader lector = cmd.ExecuteReader(); //leer los datos tabla sql
+
+                List<Seguros> listado = new List<Seguros>(); //se agrega en una lista atraves de un siclo
+                while (lector.Read())
+                {
+                    listado.Add(new Seguros()
+                    {
+                        idseguros = int.Parse(lector[0].ToString()),
+                        tipo = lector[1].ToString()
+                    });
+                }
+
+                return listado;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cnn.Close();
+            }
+
+
+        }
+
         public int eliminarSeguros(int idseg)
         {
 
@@ -102,7 +145,8 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("idseguros", idseg); //parametro del procedimiento almacenado
                 cm.Parameters.AddWithValue("@MontoSeguros", "");
-                
+                cm.Parameters.AddWithValue("@tipo", "");
+
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -125,10 +169,11 @@ namespace CapaDatos
             try
             {
                 SqlConnection cnx = cn.conectar(); //Conexion
-                cm = new SqlCommand("Seguros", cnx);
+                cm = new SqlCommand("Pr_seguros", cnx);
                 cm.Parameters.AddWithValue("b", 4);
                 cm.Parameters.AddWithValue("@idseguros", ""); 
                 cm.Parameters.AddWithValue("@MontoSeguro", s);
+                cm.Parameters.AddWithValue("@tipo",s);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -153,10 +198,11 @@ namespace CapaDatos
             {
 
                 SqlConnection cnx = cn.conectar(); //Conexion
-                cm = new SqlCommand("Seguros", cnx);
+                cm = new SqlCommand("Pr_seguros", cnx);
                 cm.Parameters.AddWithValue("b", 5);
                 cm.Parameters.AddWithValue("@idseguros", ""); 
                 cm.Parameters.AddWithValue("@MontoSeguro", dato);
+                cm.Parameters.AddWithValue("@tipo", dato);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -168,6 +214,7 @@ namespace CapaDatos
                     Seguros s = new Seguros();
                     s.idseguros = Convert.ToInt32(dr["idseguros"].ToString());
                     s.MontoSeguro = Convert.ToInt32(dr["MontoSeguro"].ToString());
+                    s.MontoSeguro = Convert.ToInt32(dr["tipo"].ToString());
 
                     listaSeguros.Add(s); //Agregar registros encontrados a lista 
                 }

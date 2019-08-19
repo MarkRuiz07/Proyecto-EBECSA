@@ -31,8 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FVehiculo));
             this.tabControlVehiculo = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.comboBoxidProspecto = new System.Windows.Forms.ComboBox();
-            this.comboBoxidCategoria = new System.Windows.Forms.ComboBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.txtMonto = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.IdProspecto = new System.Windows.Forms.Label();
+            this.idCategoria = new System.Windows.Forms.Label();
+            this.IdSeguros = new System.Windows.Forms.Label();
+            this.cbxProspecto = new System.Windows.Forms.ComboBox();
+            this.cbxTipoVehiculo = new System.Windows.Forms.ComboBox();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxCirculacion = new System.Windows.Forms.TextBox();
@@ -54,27 +61,20 @@
             this.lblMarca = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridViewVehiculo = new System.Windows.Forms.DataGridView();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.labelBuscar = new System.Windows.Forms.Label();
-            this.IdSeguros = new System.Windows.Forms.Label();
-            this.idCategoria = new System.Windows.Forms.Label();
-            this.IdProspecto = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBoxMontoSeguro = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControlVehiculo.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehiculo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlVehiculo
@@ -93,14 +93,14 @@
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPage1.Controls.Add(this.pictureBox3);
-            this.tabPage1.Controls.Add(this.textBoxMontoSeguro);
+            this.tabPage1.Controls.Add(this.txtMonto);
             this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.IdProspecto);
             this.tabPage1.Controls.Add(this.idCategoria);
             this.tabPage1.Controls.Add(this.IdSeguros);
-            this.tabPage1.Controls.Add(this.comboBoxidProspecto);
-            this.tabPage1.Controls.Add(this.comboBoxidCategoria);
+            this.tabPage1.Controls.Add(this.cbxProspecto);
+            this.tabPage1.Controls.Add(this.cbxTipoVehiculo);
             this.tabPage1.Controls.Add(this.buttonGuardar);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.textBoxCirculacion);
@@ -131,23 +131,91 @@
             this.tabPage1.Text = "Datos";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // comboBoxidProspecto
+            // pictureBox3
             // 
-            this.comboBoxidProspecto.FormattingEnabled = true;
-            this.comboBoxidProspecto.Location = new System.Drawing.Point(611, 238);
-            this.comboBoxidProspecto.Name = "comboBoxidProspecto";
-            this.comboBoxidProspecto.Size = new System.Drawing.Size(35, 27);
-            this.comboBoxidProspecto.TabIndex = 32;
-            this.comboBoxidProspecto.Visible = false;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(547, 179);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 37);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 39;
+            this.pictureBox3.TabStop = false;
             // 
-            // comboBoxidCategoria
+            // txtMonto
             // 
-            this.comboBoxidCategoria.Font = new System.Drawing.Font("Eras Medium ITC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxidCategoria.FormattingEnabled = true;
-            this.comboBoxidCategoria.Location = new System.Drawing.Point(220, 187);
-            this.comboBoxidCategoria.Name = "comboBoxidCategoria";
-            this.comboBoxidCategoria.Size = new System.Drawing.Size(260, 26);
-            this.comboBoxidCategoria.TabIndex = 31;
+            this.txtMonto.Font = new System.Drawing.Font("Eras Medium ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.Location = new System.Drawing.Point(701, 187);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(97, 26);
+            this.txtMonto.TabIndex = 38;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(47, 179);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 37;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Eras Demi ITC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(280, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(357, 23);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Seleccione el tipo de vehiculo a cotizar";
+            // 
+            // IdProspecto
+            // 
+            this.IdProspecto.AutoSize = true;
+            this.IdProspecto.Location = new System.Drawing.Point(486, 241);
+            this.IdProspecto.Name = "IdProspecto";
+            this.IdProspecto.Size = new System.Drawing.Size(106, 19);
+            this.IdProspecto.TabIndex = 35;
+            this.IdProspecto.Text = "ID prospecto";
+            this.IdProspecto.Visible = false;
+            // 
+            // idCategoria
+            // 
+            this.idCategoria.AutoSize = true;
+            this.idCategoria.Location = new System.Drawing.Point(85, 187);
+            this.idCategoria.Name = "idCategoria";
+            this.idCategoria.Size = new System.Drawing.Size(135, 19);
+            this.idCategoria.TabIndex = 34;
+            this.idCategoria.Text = "Tipo de Vehiculo";
+            this.idCategoria.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // IdSeguros
+            // 
+            this.IdSeguros.AutoSize = true;
+            this.IdSeguros.Location = new System.Drawing.Point(583, 189);
+            this.IdSeguros.Name = "IdSeguros";
+            this.IdSeguros.Size = new System.Drawing.Size(112, 19);
+            this.IdSeguros.TabIndex = 33;
+            this.IdSeguros.Text = "MontoSeguro";
+            // 
+            // cbxProspecto
+            // 
+            this.cbxProspecto.FormattingEnabled = true;
+            this.cbxProspecto.Location = new System.Drawing.Point(611, 238);
+            this.cbxProspecto.Name = "cbxProspecto";
+            this.cbxProspecto.Size = new System.Drawing.Size(35, 27);
+            this.cbxProspecto.TabIndex = 32;
+            this.cbxProspecto.Visible = false;
+            // 
+            // cbxTipoVehiculo
+            // 
+            this.cbxTipoVehiculo.Font = new System.Drawing.Font("Eras Medium ITC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxTipoVehiculo.FormattingEnabled = true;
+            this.cbxTipoVehiculo.Location = new System.Drawing.Point(220, 187);
+            this.cbxTipoVehiculo.Name = "cbxTipoVehiculo";
+            this.cbxTipoVehiculo.Size = new System.Drawing.Size(260, 26);
+            this.cbxTipoVehiculo.TabIndex = 31;
             // 
             // buttonGuardar
             // 
@@ -344,6 +412,17 @@
             this.labelID.TabIndex = 4;
             this.labelID.Text = "ID";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Eras Demi ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(384, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Datos del Vehiculo";
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.LightCyan;
@@ -356,7 +435,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(927, 708);
+            this.tabPage2.Size = new System.Drawing.Size(939, 617);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalles";
             // 
@@ -385,7 +464,7 @@
             // 
             // buttonEditar
             // 
-            this.buttonEditar.BackColor = System.Drawing.Color.Gold;
+            this.buttonEditar.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEditar.Location = new System.Drawing.Point(402, 21);
             this.buttonEditar.Name = "buttonEditar";
@@ -414,89 +493,13 @@
             this.labelBuscar.TabIndex = 0;
             this.labelBuscar.Text = "Buscar";
             // 
-            // IdSeguros
-            // 
-            this.IdSeguros.AutoSize = true;
-            this.IdSeguros.Location = new System.Drawing.Point(583, 189);
-            this.IdSeguros.Name = "IdSeguros";
-            this.IdSeguros.Size = new System.Drawing.Size(112, 19);
-            this.IdSeguros.TabIndex = 33;
-            this.IdSeguros.Text = "MontoSeguro";
-            // 
-            // idCategoria
-            // 
-            this.idCategoria.AutoSize = true;
-            this.idCategoria.Location = new System.Drawing.Point(85, 187);
-            this.idCategoria.Name = "idCategoria";
-            this.idCategoria.Size = new System.Drawing.Size(135, 19);
-            this.idCategoria.TabIndex = 34;
-            this.idCategoria.Text = "Tipo de Vehiculo";
-            this.idCategoria.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // IdProspecto
-            // 
-            this.IdProspecto.AutoSize = true;
-            this.IdProspecto.Location = new System.Drawing.Point(486, 241);
-            this.IdProspecto.Name = "IdProspecto";
-            this.IdProspecto.Size = new System.Drawing.Size(106, 19);
-            this.IdProspecto.TabIndex = 35;
-            this.IdProspecto.Text = "ID prospecto";
-            this.IdProspecto.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Eras Demi ITC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(280, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(357, 23);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "Seleccione el tipo de vehiculo a cotizar";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(46, 182);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 31);
-            this.pictureBox2.TabIndex = 37;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBoxMontoSeguro
-            // 
-            this.textBoxMontoSeguro.Font = new System.Drawing.Font("Eras Medium ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMontoSeguro.Location = new System.Drawing.Point(701, 187);
-            this.textBoxMontoSeguro.Name = "textBoxMontoSeguro";
-            this.textBoxMontoSeguro.Size = new System.Drawing.Size(97, 26);
-            this.textBoxMontoSeguro.TabIndex = 38;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(552, 182);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 37);
-            this.pictureBox3.TabIndex = 39;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Eras Demi ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(384, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 24);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Datos del Vehiculo";
-            // 
             // FVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(943, 618);
+            this.ClientSize = new System.Drawing.Size(911, 610);
             this.Controls.Add(this.tabControlVehiculo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -506,12 +509,12 @@
             this.tabControlVehiculo.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehiculo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -547,13 +550,13 @@
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Label labelBuscar;
-        private System.Windows.Forms.ComboBox comboBoxidCategoria;
-        private System.Windows.Forms.ComboBox comboBoxidProspecto;
+        private System.Windows.Forms.ComboBox cbxTipoVehiculo;
+        private System.Windows.Forms.ComboBox cbxProspecto;
         private System.Windows.Forms.Label IdProspecto;
         private System.Windows.Forms.Label idCategoria;
         private System.Windows.Forms.Label IdSeguros;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBoxMontoSeguro;
+        private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
