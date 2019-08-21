@@ -1,0 +1,7 @@
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Release\CapaDatos.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Release\CapaDatos.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Release\CapaEntidades.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\bin\Release\CapaEntidades.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Release\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Release\CapaDatos.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaDatos\obj\Release\CapaDatos.pdb

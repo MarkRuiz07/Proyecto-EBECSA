@@ -209,5 +209,44 @@ namespace CapaDatos
             return listaProspecto; //regresa lista 
         }
 
+        public List<detalles> mostrarDetalles()
+        {
+            List<detalles> listaDetalles = null;
+            SqlConnection cnx = cn.conectar(); //Conexion
+            try
+            {
+
+                cm = new SqlCommand("Pr_detalles", cnx);
+                cm.CommandType = CommandType.StoredProcedure;
+                cnx.Open();
+                dr = cm.ExecuteReader();
+                
+                listaDetalles = new List<detalles>(); //Lista 
+                while (dr.Read()) //Recorrer cada registro
+                {
+                    detalles p = new detalles();
+                    p.nombres = (dr["nombres"].ToString());
+                    p.cedula = dr["cedula"].ToString();
+                    p.tipo = dr["tipo"].ToString();
+                    p.modelo = dr["modelo"].ToString();
+                    p.NumeroCirculacion = dr["NumeroCirculacion"].ToString();
+                    p.MontoSeguro = int.Parse(dr["MontoSeguro"].ToString());
+                    p.sumaAsegurada = decimal.Parse(dr["sumaAsegurada"].ToString());
+                    p.descripcion = dr["descripcion"].ToString();
+
+                    listaDetalles.Add(p); //Agregar registros encontrados a lista 
+                }
+            }
+            catch (Exception e)
+            {
+                e.Message.ToString();
+                listaDetalles = null;
+
+            }
+            finally
+            { cnx.Close(); }
+            return listaDetalles; //regresa lista 
+        }
+
     }
 }

@@ -17,6 +17,11 @@ namespace CapaNegocio
             return prs.insertarProspecto(pr);
         }
 
+        public List<detalles> mostrarDetalles()
+        {
+            return prs.mostrarDetalles();
+        }
+
         public List<Prospecto> listarProspecto()
         {
             return prs.listarProspecto();

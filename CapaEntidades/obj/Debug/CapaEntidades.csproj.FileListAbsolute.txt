@@ -8,11 +8,6 @@ C:\Users\Usuario\Documents\EBECSA\CapaEntidades\bin\Debug\CapaEntidades.pdb
 C:\Users\Usuario\Documents\EBECSA\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Documents\EBECSA\CapaEntidades\obj\Debug\CapaEntidades.dll
 C:\Users\Usuario\Documents\EBECSA\CapaEntidades\obj\Debug\CapaEntidades.pdb
-C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\bin\Debug\CapaEntidades.dll
-C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\bin\Debug\CapaEntidades.pdb
-C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
-C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\obj\Debug\CapaEntidades.dll
-C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\obj\Debug\CapaEntidades.pdb
 G:\Proyecto-EBECSA\CapaEntidades\bin\Debug\CapaEntidades.dll
 G:\Proyecto-EBECSA\CapaEntidades\bin\Debug\CapaEntidades.pdb
 G:\Proyecto-EBECSA\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache

@@ -19,40 +19,31 @@ namespace CapaDatos
         //Para cargar datos
         SqlDataReader dr = null;
         List<Vehiculo> listaVehiculo = null;
+        private object cmd;
+
         public int insertarVehiculo(Vehiculo v)
         {
-            try
-            {
-                SqlConnection cnx = cn.conectar(); //Conexion
-                cm = new SqlCommand("Pr_Vehiculo", cnx);
-                cm.Parameters.AddWithValue("@b", 1);
-                cm.Parameters.AddWithValue("@idVehiculo", ""); //del procedimiento
-                cm.Parameters.AddWithValue("@marca", v.marca);
-                cm.Parameters.AddWithValue("@modelo", v.modelo);
-                cm.Parameters.AddWithValue("@color", v.color);
-                cm.Parameters.AddWithValue("@colorSecundario", v.colorSecundario);
-                cm.Parameters.AddWithValue("@añoFabricacion", v.añoFabricacion);
-                cm.Parameters.AddWithValue("@VersionCaracteristicas", v.VersionCaracteristicas);
-                cm.Parameters.AddWithValue("@NumeroPasajeros", v.NumeroPasajeros);
-                cm.Parameters.AddWithValue("@NumeroCirculacion", v.NumeroCirculacion);
-                cm.Parameters.AddWithValue("@idProspecto", v.idProspecto);
-                cm.Parameters.AddWithValue("@idseguros", v.idseguros);
-                cm.Parameters.AddWithValue("@idcategoria", v.idcategoria);
 
-                cm.CommandType = CommandType.StoredProcedure;
-                cnx.Open();
-                cm.ExecuteNonQuery();
-                indicador = 1;
-            }
-            catch (Exception e)
-            {
-                e.Message.ToString();
-                indicador = 0;
-            }
-            finally
-            {
-                cm.Connection.Close();
-            }
+            SqlConnection cnx = cn.conectar(); //Conexion
+            cm = new SqlCommand("Pr_Vehiculo", cnx);
+            cm.Parameters.AddWithValue("@b", 1);
+            cm.Parameters.AddWithValue("@idVehiculo", ""); //del procedimiento
+            cm.Parameters.AddWithValue("@marca", v.marca);
+            cm.Parameters.AddWithValue("@modelo", v.modelo);
+            cm.Parameters.AddWithValue("@color", v.color);
+            cm.Parameters.AddWithValue("@colorSecundario", v.colorSecundario);
+            cm.Parameters.AddWithValue("@añoFabricacion", v.añoFabricacion);
+            cm.Parameters.AddWithValue("@VersionCaracteristicas", v.VersionCaracteristicas);
+            cm.Parameters.AddWithValue("@NumeroPasajeros", v.NumeroPasajeros);
+            cm.Parameters.AddWithValue("@NumeroCirculacion", v.NumeroCirculacion);
+            cm.Parameters.AddWithValue("@idProspecto", v.idProspecto);
+            cm.Parameters.AddWithValue("@idseguros", v.idseguros);
+
+            cm.CommandType = CommandType.StoredProcedure;
+            cnx.Open();
+            cm.ExecuteNonQuery();
+            indicador = 1;
+            cnx.Close();
             return indicador;
 
         }
@@ -76,7 +67,6 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@NumeroCirculacion","");
                 cm.Parameters.AddWithValue("@idProspecto", "");
                 cm.Parameters.AddWithValue("@idseguros", "");
-                cm.Parameters.AddWithValue("@idcategoria", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -96,7 +86,6 @@ namespace CapaDatos
                     v.NumeroCirculacion = dr["NumeroCirculacion"].ToString();
                     v.idProspecto = Convert.ToInt32(dr["idProspecto"].ToString());
                     v.idseguros = Convert.ToInt32(dr["idseguros"].ToString());
-                    v.idcategoria = Convert.ToInt32(dr["idcategoria"].ToString());
                     listaVehiculo.Add(v); //Agregar registros encontrados a lista 
                 }
             }
@@ -113,6 +102,7 @@ namespace CapaDatos
 
 
         }
+
 
         public int eliminarVehiculo(int idveh)
         {
@@ -134,7 +124,6 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@NumeroCirculacion", "");
                 cm.Parameters.AddWithValue("@idProspecto", "");
                 cm.Parameters.AddWithValue("@idseguros", "");
-                cm.Parameters.AddWithValue("@idcategoria", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -169,7 +158,6 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@NumeroCirculacion", v.NumeroCirculacion);
                 cm.Parameters.AddWithValue("@idProspecto", v.idProspecto);
                 cm.Parameters.AddWithValue("@idseguros", v.idseguros);
-                cm.Parameters.AddWithValue("@idcategoria", v.idcategoria);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -207,7 +195,6 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@NumeroCirculacion", dato);
                 cm.Parameters.AddWithValue("@idProspecto", dato);
                 cm.Parameters.AddWithValue("@idseguros", "");
-                cm.Parameters.AddWithValue("@idcategoria", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -228,7 +215,6 @@ namespace CapaDatos
                     v.NumeroCirculacion = dr["NumeroCirculacion"].ToString();
                     v.idProspecto = Convert.ToInt32(dr["idProspecto"].ToString());
                     v.idseguros = Convert.ToInt32(dr["idseguros"].ToString());
-                    v.idcategoria = Convert.ToInt32(dr["idcategoria"].ToString());
 
                     listaVehiculo.Add(v); //Agregar registros encontrados a lista 
                 }

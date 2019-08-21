@@ -169,6 +169,10 @@ namespace CapaPresentacionWF
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            FVehiculo fm = new FVehiculo(); //abre un nuevo formulario y cierra el principal sin terminar la ejecucion 
+            this.Hide();
+            fm.ShowDialog();
+            //this.Close();//para cerrar 
         }
 
         private void dataGridViewProspecto_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -179,6 +183,14 @@ namespace CapaPresentacionWF
                 fp.ProspectoId = int.Parse(dataGridViewProspecto.SelectedRows[0].Cells[0].Value.ToString());
                 fp.Show();
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Inicio1 fm = new Inicio1();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
         }
     }
 }

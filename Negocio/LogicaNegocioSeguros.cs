@@ -11,7 +11,7 @@ namespace CapaNegocio
     public class LogicaNegocioSeguros
     {
         accesoDatosSeguros sg = new accesoDatosSeguros();
-
+     
         public int insertarSeguros(Seguros sgr)
         {
             return sg.insertarSeguros(sgr);
@@ -41,6 +41,11 @@ namespace CapaNegocio
         public List<Seguros> selectVehiculo()
         {
             return sg.selectVehiculo();
+        }
+
+        public int montoSeguro(int s)
+        {
+            return sg.obtenerMonto(s);
         }
 
     }

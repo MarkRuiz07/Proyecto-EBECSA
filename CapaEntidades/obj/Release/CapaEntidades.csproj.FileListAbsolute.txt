@@ -1,0 +1,4 @@
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\bin\Release\CapaEntidades.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\bin\Release\CapaEntidades.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\obj\Release\CapaEntidades.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\CapaEntidades\obj\Release\CapaEntidades.pdb

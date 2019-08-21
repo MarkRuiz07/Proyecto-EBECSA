@@ -1,0 +1,9 @@
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Release\Negocio.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Release\Negocio.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Release\CapaDatos.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Release\CapaEntidades.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Release\CapaDatos.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\bin\Release\CapaEntidades.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\obj\Release\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\obj\Release\Negocio.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto-EBECSA\Negocio\obj\Release\Negocio.pdb

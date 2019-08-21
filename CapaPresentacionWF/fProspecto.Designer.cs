@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fProspecto));
             this.tabconProspecto = new System.Windows.Forms.TabControl();
             this.tabPageProspecto = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@
             this.lblBuscar = new System.Windows.Forms.Label();
             this.tabconProspecto.SuspendLayout();
             this.tabPageProspecto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPageDetalleProspecto.SuspendLayout();
@@ -68,16 +70,17 @@
             this.tabconProspecto.Controls.Add(this.tabPageProspecto);
             this.tabconProspecto.Controls.Add(this.tabPageDetalleProspecto);
             this.tabconProspecto.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabconProspecto.Location = new System.Drawing.Point(18, -2);
+            this.tabconProspecto.Location = new System.Drawing.Point(51, 12);
             this.tabconProspecto.Name = "tabconProspecto";
             this.tabconProspecto.SelectedIndex = 0;
-            this.tabconProspecto.Size = new System.Drawing.Size(750, 487);
+            this.tabconProspecto.Size = new System.Drawing.Size(810, 545);
             this.tabconProspecto.TabIndex = 12;
             // 
             // tabPageProspecto
             // 
             this.tabPageProspecto.BackColor = System.Drawing.Color.MintCream;
             this.tabPageProspecto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPageProspecto.Controls.Add(this.pictureBox3);
             this.tabPageProspecto.Controls.Add(this.pictureBox2);
             this.tabPageProspecto.Controls.Add(this.pictureBox1);
             this.tabPageProspecto.Controls.Add(this.label5);
@@ -98,18 +101,31 @@
             this.tabPageProspecto.Controls.Add(this.lblCedula);
             this.tabPageProspecto.Location = new System.Drawing.Point(4, 28);
             this.tabPageProspecto.Name = "tabPageProspecto";
-            this.tabPageProspecto.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPageProspecto.Size = new System.Drawing.Size(742, 455);
+            this.tabPageProspecto.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageProspecto.Size = new System.Drawing.Size(802, 513);
             this.tabPageProspecto.TabIndex = 0;
             this.tabPageProspecto.Text = "Nuevo";
             this.tabPageProspecto.Click += new System.EventHandler(this.tabPageProspecto_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(635, 400);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(49, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 22;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(688, 400);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(49, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -297,7 +313,7 @@
             this.tabPageDetalleProspecto.Controls.Add(this.lblBuscar);
             this.tabPageDetalleProspecto.Location = new System.Drawing.Point(4, 28);
             this.tabPageDetalleProspecto.Name = "tabPageDetalleProspecto";
-            this.tabPageDetalleProspecto.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageDetalleProspecto.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageDetalleProspecto.Size = new System.Drawing.Size(742, 455);
             this.tabPageDetalleProspecto.TabIndex = 1;
             this.tabPageDetalleProspecto.Text = "Detalles";
@@ -365,16 +381,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 482);
+            this.ClientSize = new System.Drawing.Size(910, 614);
             this.Controls.Add(this.tabconProspecto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fProspecto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seguros EBECSA";
             this.Load += new System.EventHandler(this.fProspecto_Load);
             this.tabconProspecto.ResumeLayout(false);
             this.tabPageProspecto.ResumeLayout(false);
             this.tabPageProspecto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPageDetalleProspecto.ResumeLayout(false);
@@ -412,5 +430,6 @@
         private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

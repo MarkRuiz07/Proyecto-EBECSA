@@ -46,8 +46,7 @@ namespace CapaPresentacionWF
                     objetoVehiculo.NumeroCirculacion = textBoxCirculacion.Text;
                     objetoVehiculo.idProspecto = this.ProspectoId;
                     objetoVehiculo.idseguros = Convert.ToInt32(cbxTipoVehiculo.SelectedValue.ToString());
-                   // objetoVehiculo.idseguros = Convert.ToInt32(txtMonto.Text);
-
+                   
                     if (logicaNV.insertarVehiculo(objetoVehiculo) > 0)
                     {
                         MessageBox.Show("Agregado con éxito");
@@ -60,7 +59,6 @@ namespace CapaPresentacionWF
                         textBoxVersionCar.Text = "";
                         textBoxNumPas.Text = "";
                         textBoxCirculacion.Text = "";
-                        cbxProspecto.Text = "";
                         cbxTipoVehiculo.Text = "";
                         txtMonto.Text = "";
                         tabControlVehiculo.SelectedTab = tabPage2;
@@ -109,7 +107,7 @@ namespace CapaPresentacionWF
                 }
                
             }
-            catch(Exception error)
+            catch
             {
                 MessageBox.Show("ERROR");
             }
@@ -127,7 +125,7 @@ namespace CapaPresentacionWF
                 cbxTipoVehiculo.DataSource = logicaSN.selectVehiculo();
                 cbxTipoVehiculo.ValueMember = "idseguros";
                 cbxTipoVehiculo.DisplayMember = "tipo";
-
+                
             }
             catch (Exception ex)
             {
@@ -189,6 +187,39 @@ namespace CapaPresentacionWF
 
         }
 
-      
+        private void cbxTipoVehiculo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbxTipoVehiculo.SelectedValue != null && cbxTipoVehiculo.SelectedIndex != -1)
+                {
+                    int monto = logicaSN.montoSeguro(int.Parse(cbxTipoVehiculo.SelectedValue.ToString()));
+                    txtMonto.Text = monto.ToString();
+                }
+            }
+            catch
+            { }
+        }
+
+        private void txtMonto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            DetallesCotizacion fm = new DetallesCotizacion(); //abre un nuevo formulario y cierra el principal sin terminar la ejecucion 
+            this.Hide();
+            fm.ShowDialog();
+           // this.Close();//para cerrar 
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            fProspecto fm = new fProspecto();
+            this.Hide();
+            fm.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -53,6 +53,11 @@ namespace CapaDatos
 
         }
 
+        public int listarSeguros(int s)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Seguros> listarSeguros()
         {
             try
@@ -133,6 +138,41 @@ namespace CapaDatos
 
 
         }
+
+        public int obtenerMonto(int ids)//////////////////////////////////////////////////////////
+        {
+
+            int monto = 0;
+
+            try
+            {
+                SqlConnection cnx = cn.conectar(); //Conexion
+                cm = new SqlCommand("obtenerMontoSeguro ", cnx);
+                cm.Parameters.AddWithValue("@idseguros", ids);
+
+                cm.CommandType = CommandType.StoredProcedure;
+                cnx.Open();
+
+                SqlDataReader lector = cm.ExecuteReader();
+
+                if (lector.Read())
+                {
+                    monto = int.Parse(lector[0].ToString());
+                }
+
+            }
+            catch (Exception e)
+            {
+                e.Message.ToString();
+                indicador = 0;
+            }
+            finally
+            {
+                cm.Connection.Close();
+            }
+
+            return monto;
+        }////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public int eliminarSeguros(int idseg)
         {

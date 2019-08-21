@@ -37,6 +37,6 @@ namespace CapaNegocio
         {
             return vh.buscarVehiculo(dato);
         }
-
+        
     }
 }

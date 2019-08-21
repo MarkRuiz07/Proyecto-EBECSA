@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="accesoDatosAseguradora.cs" />
     <Compile Include="accesoDatosCobertura.cs" />
-    <Compile Include="accesoDatosComentarios.cs" />
     <Compile Include="accesoDatosProveedor.cs" />
     <Compile Include="accesoDatosSeguros.cs" />
     <Compile Include="accesoDatosVehiculo.cs" />

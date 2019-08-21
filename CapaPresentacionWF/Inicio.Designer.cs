@@ -44,10 +44,9 @@
             this.panel1.Controls.Add(this.lblinicio);
             this.panel1.Controls.Add(this.picBoxInicio);
             this.panel1.Controls.Add(this.pictureBoxEbecsa);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1179, 677);
+            this.panel1.Size = new System.Drawing.Size(786, 440);
             this.panel1.TabIndex = 0;
             // 
             // lblinicio
@@ -56,20 +55,18 @@
             this.lblinicio.BackColor = System.Drawing.Color.FloralWhite;
             this.lblinicio.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblinicio.Font = new System.Drawing.Font("Eras Demi ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinicio.Location = new System.Drawing.Point(824, 603);
-            this.lblinicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblinicio.Location = new System.Drawing.Point(549, 392);
             this.lblinicio.Name = "lblinicio";
-            this.lblinicio.Size = new System.Drawing.Size(203, 28);
+            this.lblinicio.Size = new System.Drawing.Size(136, 19);
             this.lblinicio.TabIndex = 4;
             this.lblinicio.Text = "Iniciar cotización";
             // 
             // picBoxInicio
             // 
             this.picBoxInicio.Image = ((System.Drawing.Image)(resources.GetObject("picBoxInicio.Image")));
-            this.picBoxInicio.Location = new System.Drawing.Point(1036, 603);
-            this.picBoxInicio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picBoxInicio.Location = new System.Drawing.Point(691, 392);
             this.picBoxInicio.Name = "picBoxInicio";
-            this.picBoxInicio.Size = new System.Drawing.Size(32, 32);
+            this.picBoxInicio.Size = new System.Drawing.Size(21, 21);
             this.picBoxInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxInicio.TabIndex = 3;
             this.picBoxInicio.TabStop = false;
@@ -78,24 +75,23 @@
             // pictureBoxEbecsa
             // 
             this.pictureBoxEbecsa.Image = global::CapaPresentacionWF.Properties.Resources.Ebecsa1;
-            this.pictureBoxEbecsa.Location = new System.Drawing.Point(207, 117);
-            this.pictureBoxEbecsa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBoxEbecsa.Location = new System.Drawing.Point(138, 76);
             this.pictureBoxEbecsa.Name = "pictureBoxEbecsa";
-            this.pictureBoxEbecsa.Size = new System.Drawing.Size(732, 382);
+            this.pictureBoxEbecsa.Size = new System.Drawing.Size(488, 248);
             this.pictureBoxEbecsa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxEbecsa.TabIndex = 1;
             this.pictureBoxEbecsa.TabStop = false;
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1185, 695);
+            this.ClientSize = new System.Drawing.Size(808, 465);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seguros EBECSA";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.panel1.ResumeLayout(false);
